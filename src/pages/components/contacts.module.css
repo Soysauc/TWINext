@@ -1,0 +1,17 @@
+/* * {
+  font-family: "Gilroy", "open-sans";
+} */
+
+.google-maps {
+  height: 500px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-us-wrapper {
+    flex-direction: column !important;
+  }
+
+  .map {
+    width: 100% !important;
+  }
+}
