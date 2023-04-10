@@ -1,0 +1,88 @@
+.contact {
+  font-family: "Gilroy", "open-sans";
+}
+.contact__content {
+  width: 90%;
+  margin: auto;
+}
+.contact__title {
+  font-size: 60px;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+.contact__text {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 80px;
+}
+.contact__subheading {
+  font-size: 40px;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+.contact__circle {
+  max-height: 692px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  margin-bottom: -700px;
+}
+.contact__form {
+  width: 70%;
+  margin: auto;
+  height: 1250px;
+  border: none;
+}
+.content__form-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+.content__mill {
+  width: 35%;
+  margin-right: auto;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.content__form-container {
+  background: #072ac6;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  height: fit-content;
+}
+.contact__map {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+.contact__info {
+  font-size: 28px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.contact-us-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.google-maps {
+  height: 500px !important;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-us-wrapper {
+    flex-direction: column !important;
+  }
+
+  .contact__map {
+    width: 100% !important;
+  }
+}
