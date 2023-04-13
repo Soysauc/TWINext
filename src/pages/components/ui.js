@@ -2,7 +2,7 @@ import { Link as NextLink } from 'next/link';
 import Image from 'next/image';
 import isAbsoluteURL from 'is-absolute-url';
 import * as React from 'react';
-// import * as styles from './ui.css';
+import * as styles from '../ui.css';
 
 export const cx = (...args) => args.filter(Boolean).join(' ');
 

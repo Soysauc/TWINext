@@ -1,0 +1,43 @@
+@media only screen and (max-width: 640px) {
+  .headerlogo {
+    flex-direction: column;
+    align-items: baseline !important;
+    margin-left: 15px;
+    height: 60px;
+  }
+  .header-container {
+    height: 60px;
+    max-width: 185px;
+  }
+  img.twi-logo {
+    margin: 0 !important;
+    height: 10px;
+  }
+  img.tree {
+    height: 55px;
+  }
+
+  .logo-container {
+    max-width: 190px !important;
+  }
+
+  .logo-container img {
+    max-width: 190px !important;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .logo-container {
+    max-width: 240px !important;
+  }
+
+  .logo-container img {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo-container {
+    max-width: 210px !important;
+  }
+}
