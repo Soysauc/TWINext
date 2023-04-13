@@ -9,8 +9,10 @@ export default function BrandLogo() {
     >
       <Image
         style={{ maxWidth: '290px' }}
-        src='/public/TWILogo.png'
+        src='/TWILogo.png'
         alt='logo'
+        width={50}
+        height={50}
       />
     </div>
   );

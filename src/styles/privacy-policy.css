@@ -1,0 +1,27 @@
+.privacy-policy-wrapper h1 {
+  text-align: center;
+  margin-top: 55px;
+  font-size: 40px;
+}
+
+.privacy-policy-wrapper ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+.privacy-policy-wrapper div {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.privacy-policy-wrapper li {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.privacy-policy-wrapper {
+  background-color: white;
+  color: black !important;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 100px;
+}
