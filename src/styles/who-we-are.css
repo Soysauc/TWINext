@@ -1,0 +1,282 @@
+.vector-1 {
+  position: absolute;
+  width: 1984px;
+  height: 784.04px;
+  left: -91px;
+  top: 416.03px;
+  background: #fbc300;
+}
+
+.cv-ellip-1 {
+  margin-top: -700px;
+}
+
+.cv-ellip-2 {
+  margin-left: auto;
+  margin-top: -100px;
+}
+
+* {
+  font-family: "Gilroy", "open-sans";
+}
+
+.biocard-1 {
+  background-color: #fff3ca;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 20px 20px 0% 0%;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.biocard-2 {
+  background-color: #fff3ca;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.biocard-2 h3 {
+  font-size: 25px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+.vector1 {
+  position: relative;
+  z-index: 1;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.vector2 {
+  position: relative;
+  z-index: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.vector-container-wwa {
+  display: grid;
+}
+
+.carousel {
+  background-image: url("https://walterstaxstrategies.com/wp-content/uploads/2022/12/background.png");
+  background-size: cover;
+}
+
+.icon-wrapper {
+  width: 30%;
+  margin: auto;
+}
+
+.values-2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.values-3 {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+
+.wwa-ellipse-48 {
+  text-align: end;
+  margin-top: -200px;
+  position: relative;
+  z-index: 9;
+  margin-bottom: -250px;
+}
+
+.icon-container img {
+  max-height: 18.25rem !important;
+}
+
+@media only screen and (max-width: 1400px) {
+  .image-container {
+    height: 650px !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .people-card .icon-container {
+    margin-top: -150px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .millionaire.wwa {
+    height: 475px !important;
+  }
+
+  .wwa-bottom-ellipse-43 {
+    display: flex !important;
+    justify-content: end !important;
+    margin-top: -300px !important;
+    margin-bottom: -350px !important;
+    height: 500px !important;
+  }
+
+  .millionaire.wwa-bottom-wrapper {
+    height: 385px !important;
+  }
+
+  .wwa-bottom-div {
+    width: 90% !important;
+    margin: auto !important;
+  }
+
+  .biocard-1 h3 {
+    text-align: center !important;
+    margin-top: 20px !important;
+  }
+
+  .people-card.first {
+    margin-top: -125px !important;
+  }
+
+  .people-card .biocard-1 .icon-container img {
+    max-height: 10.25rem !important;
+    margin-top: -80px !important;
+    padding: 5px;
+  }
+
+  div.third-home-div {
+    margin-top: 80px !important;
+  }
+  .wwa-ellipse-48 {
+    margin-bottom: -50px;
+  }
+
+  .wwa-ellipse-48 img {
+    max-height: 200px;
+    margin-top: 70px !important;
+    margin-bottom: -50px;
+  }
+
+  .values-1,
+  .values-2,
+  .values-3 {
+    width: 100% !important;
+    position: relative;
+    z-index: 9;
+  }
+
+  .carousel-words {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel svg {
+    margin-top: 0px !important;
+    top: 64vh !important;
+  }
+
+  .carousel {
+    flex-direction: column !important;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousel div {
+    width: 90% !important;
+  }
+
+  .carousel-image {
+    max-height: 600px !important;
+    width: auto !important;
+    /* padding-bottom: 100px !important; */
+  }
+  .vector {
+    display: none !important;
+  }
+
+  .values {
+    width: 100% !important;
+  }
+
+  .people-card {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .carousel-image-wrapper {
+    margin-top: 100%;
+  }
+
+  .biocard-1 {
+    width: 100% !important;
+  }
+
+  .biocard-2 {
+    width: 100% !important;
+  }
+
+  .biocard-2 h3 {
+    font-size: 15px !important;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .biocard-1 h3 {
+    font-size: 18px !important;
+  }
+
+  .biocard-1 h4 {
+    font-size: 14px !important;
+  }
+
+  .heath-bio-title {
+    margin-left: -25px !important;
+  }
+
+  .jake-bio-title {
+    margin-right: -25px !important;
+  }
+
+  .guy-bio-title {
+    margin-left: -22px !important;
+  }
+
+  .jorge-bio-title {
+    margin-right: -24px;
+    margin-bottom: 15px;
+  }
+
+  .liz-bio-title {
+    margin-left: -21px;
+  }
+
+  .nick-bio-title {
+    margin-right: -28px;
+    margin-bottom: 15px;
+  }
+
+  .wwd-contact-button.wwa {
+    margin-top: auto !important;
+  }
+
+  .wwa-bottom-div h1 {
+    font-size: 25px !important;
+  }
+
+  .wwa-bottom-div h3 {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .values {
+    width: 100% !important;
+  }
+
+  .guidance {
+    margin-left: 0px !important;
+  }
+}

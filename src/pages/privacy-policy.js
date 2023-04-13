@@ -1,10 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-// import Layout from '../components/layout';
+import Layout from './components/layout';
 // import SEOHead from '../components/head';
 
 export default function privacyPolicy() {
   return (
-    <>
+    <Layout>
       <div>
         <div className='privacy-policy-wrapper'>
           <h1>Privacy Policy</h1>
@@ -256,7 +257,7 @@ export default function privacyPolicy() {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 }
 
