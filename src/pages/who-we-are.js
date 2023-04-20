@@ -2,19 +2,11 @@ import React from 'react';
 import Layout from './components/layout';
 // import { Button } from "../components/ui.js"
 import Image from 'next/image';
-// import './who-we-are.css';
 // import SEOHead from "../components/head"
 
 export default function WhoWeAre() {
   return (
     <Layout>
-      {/* SVGS
-                        <svg className="vector" style={{position: "relative", zIndex: 1, maxWidth: "1700px", marginTop: "-350px"}}  height="785" viewBox="0 0 1728 785" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M835.5 259.5C561 566.072 223.5 566.072 -74.5 566.072L-91 723.072L1878 784.072L1893 234.571C1822 169.571 1652.3 32.9715 1541.5 6.57151C1399 -25.2618 1014.86 59.1869 835.5 259.5Z" fill="#FBC300"/>
-            </svg>
-            <svg className="vector" style={{position: "relative", zIndex: 0, maxWidth: "1700px", marginTop: "-317px"}} width="1728" height="827" viewBox="0 0 1728 827" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1885 608.342H1885L1901.5 765.342L-67.5 826.342L-210 48.842C-139 -16.158 135.5 -5.72949 275.5 19.7706C433.446 48.5393 795.643 101.458 975 301.771C1249.5 608.342 1587 608.342 1885 608.342Z" fill="#FFF3CA"/>
-    </svg>*/}
       <div className='wrapper' style={{ width: '100%', overflow: 'hidden' }}>
         <div
           className='carousel'
@@ -78,18 +70,7 @@ export default function WhoWeAre() {
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/heath-nobackground1.png'
             />
           </div>
-          {/* <div className="carousel-image-wrapper" style={{width: "44%", textAlign: "end", position: "relative", zIndex: "1", marginTop: "auto"}}>
-                        <Image style={{}} src="https://walterstaxstrategies.com/wp-content/uploads/2022/12/heath-nobackground1.png" />
-                    </div>
-                     */}
         </div>
-
-        {/*<svg className="vector1" style={{marginBottom: "-100px", marginTop: "-500px", position: "relative", zIndex: "1"}}  viewBox="0 0 1728 785" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M835.5 259.5C561 566.072 223.5 566.072 -74.5 566.072L-91 723.072L1878 784.072L1893 234.571C1822 169.571 1652.3 32.9715 1541.5 6.57151C1399 -25.2618 1014.86 59.1869 835.5 259.5Z" fill="#FBC300"/>
-            </svg>
-            <svg className="vector2" style={{marginTop: "-700px", position: "relative", zIndex: "0"}}  viewBox="0 0 1728 827" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1885 608.342H1885L1901.5 765.342L-67.5 826.342L-210 48.842C-139 -16.158 135.5 -5.72949 275.5 19.7706C433.446 48.5393 795.643 101.458 975 301.771C1249.5 608.342 1587 608.342 1885 608.342Z" fill="#FFF3CA"/>
-</svg>*/}
       </div>
 
       <div
@@ -163,12 +144,12 @@ export default function WhoWeAre() {
           }}
         >
           <div className='icon-wrapper'>
-            <Image
+            {/* <Image
               width={50}
               height={50}
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/award.png'
               alt='award'
-            />
+            /> */}
           </div>
           <div
             style={{
@@ -202,10 +183,10 @@ export default function WhoWeAre() {
           }}
         >
           <div className='icon-wrapper'>
-            <Image
+            {/* <Image
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/target.png'
               alt='target'
-            />
+            /> */}
           </div>
           <div
             style={{
@@ -240,10 +221,10 @@ export default function WhoWeAre() {
           }}
         >
           <div className='icon-wrapper'>
-            <Image
+            {/* <Image
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/certificate.png'
               alt='ribbon'
-            />
+            /> */}
           </div>
           <div
             style={{
@@ -280,7 +261,6 @@ export default function WhoWeAre() {
         <ellipse cx='-387.5' cy='677.5' rx='572.5' ry='577.5' fill='#D0D7F5' />
       </svg>
 
-      {/*Meet the Team */}
       <div style={{ marginTop: '-190px' }}>
         <h1
           style={{
@@ -301,7 +281,7 @@ export default function WhoWeAre() {
             color: 'black',
           }}
         >
-          We're family here.
+          We`&#39;`re family here.
         </h3>
         <svg
           className='cv-ellip-2'
@@ -549,7 +529,7 @@ export default function WhoWeAre() {
               </svg>
             </a>
             <br></br>
-            <h4
+            <p
               style={{
                 fontSize: '20px',
                 color: 'black',
@@ -560,7 +540,7 @@ export default function WhoWeAre() {
               }}
             >
               COO
-            </h4>
+            </p>
           </h3>
 
           <div className='icon-container' style={{}}>
@@ -660,22 +640,7 @@ export default function WhoWeAre() {
           position: 'relative',
           zIndex: '3',
         }}
-      >
-        {/* <div className="biocard-1">
-                            <h3 className="nick-bio-title" style={{fontSize: "30px", fontWeight: "600", marginTop: "auto", color: "black", width: "50%", textAlign: "center"}}>
-                                Nicholas Torres  <a href="https://www.linkedin.com/in/nicholas-torres-918b921b6/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a><br></br><h4 style={{fontSize: "20px", color: "black", fontWeight: "500", margin: "0", textAlign: "center"}}>Web Developer</h4>
-                            </h3>
-                            
-                            <div className="icon-container" style={{}}>
-                                <img style={{padding: "20px", maxHeight: "12.25rem"}} src="https://walterstaxstrategies.com/wp-content/uploads/2022/12/nick-circle-ellipse.png" alt="nick-circle-ellipse"/>
-                            </div>
-                        </div>
-                        <div className="biocard-2">
-                            <h3 style={{width: "90%", color: "black", fontWeight: "500"}}>A full stack developer with years of experience building E-commerce sites and ERP systems, Nick is applying his skills to make breakthroughs in the fields of Accounting and advanced tax planning.<br></br><br></br>
-
-                            If he is not developing the latest and greatest in FinTech applications, Nick enjoys time with his family as well as fishing and backpacking</h3>
-                        </div>                         */}
-      </div>
+      ></div>
       <div className='wwa-bottom-ellipse-43' style={{ display: 'none' }}>
         <img src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/Ellipse-43-1.png' />
       </div>

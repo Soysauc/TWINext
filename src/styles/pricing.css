@@ -1,0 +1,147 @@
+.pricing-card {
+  border: 1px solid #000000;
+  box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  width: 30%;
+  background-color: #ffffff;
+  height: fit-content;
+}
+
+* {
+  font-family: 'Gilroy', 'open-sans';
+}
+.education__checks {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+.education__text {
+  font-size: 20px;
+  color: black;
+  width: 90%;
+  margin: auto;
+}
+.education__card-text {
+  font-size: 20px;
+  color: black;
+  width: 90%;
+  margin: auto;
+  border-bottom: 5px solid #d0d7f5;
+  border-top: 5px solid #d0d7f5;
+  padding: 25px;
+}
+div.pricing-cards-wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-topper {
+  background-color: #fbc300;
+  height: 28px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.guarantees {
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (min-width: 600px) {
+  .pricing-card div img {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  div.pricing-cards-wrapper {
+    flex-direction: column;
+  }
+
+  .pricing-card {
+    width: 90%;
+    margin-bottom: 50px !important;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing-header {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricing-cards-wrapper {
+    width: 95% !important;
+  }
+
+  .pricing-card h2 {
+    font-size: 35px !important;
+  }
+
+  .pricing-card h3 {
+    width: 90% !important;
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .pricing-card p {
+    font-size: 17px !important;
+  }
+
+  .guarantees {
+    width: 100% !important;
+  }
+
+  .guarantees h2 {
+    font-size: 28px !important;
+  }
+
+  .guarantees p {
+    font-size: 18px !important;
+  }
+
+  div.pricing-cards-wrapper {
+    margin-bottom: -125px !important;
+  }
+
+  .pricing-structure-bottom {
+    width: 90% !important;
+    margin: auto !important;
+  }
+
+  .pricing-structure-bottom a {
+    font-size: 18px !important;
+  }
+
+  .pricing-structure-bottom-ellipse {
+    display: flex !important;
+    justify-content: end !important;
+    margin-bottom: -350px !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .guarantees-pricing {
+    flex-direction: column !important;
+  }
+
+  .guarantees-pricing svg {
+    margin-top: 50px !important;
+  }
+
+  .guarantee-2 {
+    margin-left: 0px !important;
+  }
+
+  .signup-button {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}

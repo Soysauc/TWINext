@@ -17,7 +17,7 @@
 }
 
 * {
-  font-family: "Gilroy", "open-sans";
+  font-family: 'Gilroy', 'open-sans';
 }
 
 .biocard-1 {
@@ -26,8 +26,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-radius: 20px 20px 0% 0%;
   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px 20px 0% 0%;
 }
 
 .biocard-2 {
@@ -36,8 +36,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-radius: 0px 0px 20px 20px;
   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
 }
 
 .biocard-2 h3 {
@@ -65,7 +65,7 @@
 }
 
 .carousel {
-  background-image: url("https://walterstaxstrategies.com/wp-content/uploads/2022/12/background.png");
+  background-image: url('https://walterstaxstrategies.com/wp-content/uploads/2022/12/background.png');
   background-size: cover;
 }
 

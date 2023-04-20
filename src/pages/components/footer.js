@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -10,34 +11,34 @@ export default function Footer() {
           <div className='footer-nav-menu'>
             <div className='footer-left-nav'>
               <p className='footer__links'>
-                <a href='/who-we-are'>Who We Are</a>
+                <Link href='/who-we-are'>Who We Are</Link>
               </p>
               <p className='footer__links'>
-                <a href='/what-we-do'>What We Do</a>
+                <Link href='/what-we-do'>What We Do</Link>
               </p>
               <p className='footer__links'>
-                <a href='/privacy-policy'>Privacy Policy</a>
+                <Link href='/privacy-policy'>Privacy Policy</Link>
               </p>
             </div>
 
             <div className='footer-right-nav'>
               <p className='footer__links'>
-                <a href='/pricing-structure'>Pricing</a>
+                <Link href='/pricing-structure'>Pricing</Link>
               </p>
               <p className='footer__links'>
-                <a href='/faq'>FAQ</a>
+                <Link href='/faq'>FAQ</Link>
               </p>
               <p className='footer__links'>
-                <a href='/insights'>Insights</a>
+                <Link href='/insights'>Insights</Link>
               </p>
             </div>
             <div className='footer-right-nav'>
               <p className='footer__links'>
-                <a href='/contact-us'>Contact</a>
+                <Link href='/contact-us'>Contact</Link>
               </p>
 
               <p className='footer__links'>
-                <a href='/education'>Education</a>
+                <Link href='/education'>Education</Link>
               </p>
 
               <a href='https://www.linkedin.com/company/heathwalterseducation/'>
