@@ -1,0 +1,378 @@
+.wwd__container {
+  width: 100%;
+  overflow: hidden;
+  color: white;
+}
+.wwd__millionaire {
+  position: relative;
+  z-index: 3;
+  background: #072ac6;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: 0;
+}
+.wwd-carousel-image {
+  height: 800px;
+}
+.wwd__process {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  width: 70%;
+  margin-left: auto;
+  justify-content: center;
+  margin-top: 95px;
+}
+.wwd__process-title {
+  font-size: 130px;
+  margin-bottom: 0;
+  font-weight: 300;
+  border-right: 5px solid #fbc300;
+  padding-right: 30px;
+  margin: 0;
+  margin-right: 30px;
+}
+.wwd__process-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+.wwd__process-text {
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 60%;
+  margin: 0;
+}
+.wwd__process-excerpt {
+  font-size: 25px;
+  font-weight: 500;
+  width: 60%;
+  margin: 0;
+}
+.wwd-footer-div {
+  width: 35%;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: 10%;
+}
+.third-home-div-wwd {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 80%;
+  margin: auto;
+}
+.wwd__div5 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 45%;
+  margin-left: 10%;
+  margin-right: auto;
+  margin-top: 100px;
+}
+.carousel-wwd {
+  background-image: url('https://walterstaxstrategies.com/wp-content/uploads/2022/12/background.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+.carousel-wwd-words {
+  width: 40%;
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: auto;
+  position: relative;
+  z-index: 3;
+}
+.wwd__title {
+  font-size: 60px;
+  color: black;
+}
+.wwd__excerpt {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 80px;
+}
+.wwd__image-container {
+  height: 800px;
+  width: 100%;
+  text-align: end;
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+}
+.carousel-wwd-img {
+  text-align: end;
+}
+
+.wwd-footer-div {
+  height: 720px;
+}
+
+.wwd__point-title {
+  width: fit-content;
+  font-size: 50px;
+  margin-bottom: 0;
+  font-weight: 500;
+  border-bottom: 1px solid #fbc300;
+  padding-right: 25px;
+}
+.wwd__point-text {
+  width: 90%;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.wwd__point-cards {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wwd__footer-millionaire {
+  background: #072ac6;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  height: 500px;
+  padding-bottom: 50px;
+}
+.icon-image.wwd {
+  max-height: 15.25 !important;
+}
+
+.wwd__point-cards.right-justify.icon-container {
+  margin-top: 0px !important;
+}
+
+@media only screen and (min-width: 1401px) {
+  .carousel-wwd {
+    height: 100vh !important;
+  }
+
+  .carousel-wwd-img {
+    margin-top: auto !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .carousel-wwd-words {
+    width: 80% !important;
+    margin-left: 50px !important;
+  }
+
+  .carousel-wwd-img {
+    width: 100% !important;
+    margin-top: auto;
+  }
+
+  .carousel-wwd svg {
+    top: 130vh !important;
+  }
+
+  .div5 {
+    width: 90% !important;
+  }
+
+  .wwd__point-cards {
+    width: 90% !important;
+  }
+
+  .wwd__image-container {
+    height: 540px !important;
+  }
+
+  .wwd-carousel-image {
+    height: 100% !important;
+  }
+}
+
+* {
+  font-family: 'Gilroy', 'open-sans';
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-wwd {
+    flex-direction: column !important;
+  }
+
+  .carousel-wwd {
+    height: 80vh !important;
+  }
+
+  .wwd__image-container {
+    height: 350px !important;
+  }
+
+  .millionaire.wwd {
+    height: 405px !important;
+  }
+
+  .wwd-contact-button {
+    font-size: 15px !important;
+    margin-top: 50px;
+  }
+
+  .process-svg {
+    margin-top: -225px !important;
+    margin-bottom: -275px !important;
+  }
+
+  .third-home-div-wwd div {
+    margin: 0px !important;
+  }
+
+  .carousel-wwd-words {
+    margin: auto !important;
+    margin-top: 50px !important;
+  }
+
+  .wwd__div5 {
+    margin-bottom: 0px !important;
+    margin-top: 50px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .wwd__point-cards.left-justify {
+    width: 97% !important;
+    margin-top: 50px !important;
+  }
+
+  .wwd__point-cards.left-justify div {
+    margin-left: 10px;
+  }
+
+  .wwd__point-cards.left-justify h1 {
+    font-size: 15px !important;
+  }
+
+  .wwd__point-cards.left-justify h3 {
+    width: 100% !important;
+    margin-top: 10px !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+  }
+
+  .wwd__point-cards.left-justify .icon-container {
+    width: 40% !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .wwd__point-cards.left-justify .icon-container img {
+    width: 100% !important;
+  }
+
+  .wwd__point-cards.right-justify {
+    flex-direction: row-reverse !important;
+    width: 97% !important;
+    margin-top: 50px !important;
+  }
+
+  .wwd__point-cards.right-justify div {
+    margin-left: 10px;
+  }
+
+  .wwd__point-cards.right-justify h1 {
+    font-size: 15px !important;
+  }
+
+  .wwd__point-cards.right-justify h3 {
+    width: 100% !important;
+    margin-top: 10px !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+  }
+
+  .wwd__point-cards.right-justify .icon-container {
+    width: 40% !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .wwd__point-cards.right-justify .icon-container img {
+    width: 100% !important;
+  }
+  .third-home-div-wwd {
+    width: 100% !important;
+  }
+  .third-home-div-wwd h1 {
+    font-size: 40px !important;
+    margin-bottom: 50px !important;
+  }
+
+  .third-home-div-wwd h3 {
+    width: 100% !important;
+  }
+
+  .third-home-div-wwd div {
+    margin-left: 0px !important;
+  }
+
+  .wwd__process {
+    width: 95% !important;
+  }
+
+  .wwd__process div h2 {
+    font-size: 45px !important;
+  }
+
+  .wwd-footer-div {
+    width: 100% !important;
+  }
+
+  .wwd__point-cards div h1 {
+    font-size: 25px !important;
+  }
+
+  .wwd__process h1 {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    font-size: 45px !important;
+  }
+
+  .wwd__process div h2 {
+    font-size: 30px !important;
+  }
+
+  .wwd__process div h3 {
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+
+  .millionaire.wwd {
+    margin-top: 150px !important;
+  }
+
+  .wwd-footer-div {
+    width: 90% !important;
+  }
+
+  .wwd-footer-div h1 {
+    font-size: 25px !important;
+  }
+
+  .wwd-footer-div h3 {
+    font-weight: 400 !important;
+  }
+
+  .footer-ellipse-wwd {
+    display: flex !important;
+    justify-content: end;
+    margin-bottom: -400px !important;
+    margin-top: -50px !important;
+  }
+}
