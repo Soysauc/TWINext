@@ -1,0 +1,79 @@
+* {
+  font-family: 'Gilroy', 'open-sans';
+}
+.faq-page-title {
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  margin-top: -950px;
+  position: relative;
+  z-index: 1;
+}
+.faqs-wrapper {
+  width: 90%;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+}
+@media only screen and (max-width: 1150px) {
+  .faqs-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .faq-page-title {
+    margin-top: -700px !important;
+  }
+
+  .faq-link {
+    font-size: 17px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .faq-page-title {
+    margin-top: -500px !important;
+  }
+
+  .faq-wrapper-div p {
+    font-size: 15px !important;
+    width: 90% !important;
+  }
+
+  div.faq-child-wrapper-div p {
+    font-size: 17px !important;
+    margin: auto !important;
+  }
+
+  .faq-bottom-div {
+    width: 95% !important;
+    margin: auto !important;
+  }
+
+  .millionaire.faq-bottom-div-wrapper {
+    height: 450px !important;
+  }
+
+  .millionaire.faq-bottom-div-wrapper a {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .faq-page-title {
+    margin-top: -270px !important;
+  }
+
+  .faqs-wrapper {
+    width: 100% !important;
+  }
+
+  .faqs-wrapper div {
+    width: 98% !important;
+  }
+}

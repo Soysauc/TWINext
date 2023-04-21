@@ -7,6 +7,8 @@ import '../styles/privacy-policy.css';
 import '../styles/who-we-are.css';
 import '../styles/what-we-do.css';
 import '../styles/pricing.css';
+import '../styles/faq.css';
+import '../styles/insights.css';
 
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

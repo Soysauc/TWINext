@@ -1,0 +1,100 @@
+.webinar-hover:hover {
+  filter: blur(2px) brightness(60%);
+}
+
+#pardot-form label {
+  font: 35px !important;
+  font-weight: 600 !important;
+  color: white !important;
+}
+
+.home-form iframe {
+  height: 1150px !important;
+}
+
+#pardot-form.form {
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .insights-container {
+    flex-direction: column !important;
+    margin-bottom: 250px !important;
+  }
+
+  .insights-container2 {
+    flex-direction: column !important;
+    margin-bottom: 250px !important;
+  }
+
+  .insights-container div,
+  .insights-h1 {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .insights-h1 {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+  }
+
+  .insights-container h1 {
+    width: 75% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .insights-header h3 {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .get-in-touch {
+    font-size: 20px !important;
+    margin-bottom: 170px;
+  }
+
+  iframe {
+    height: 300px !important;
+  }
+
+  .millionaire.insights {
+    height: 400px !important;
+    margin-top: 100px !important;
+  }
+
+  div.insights-container {
+    margin-bottom: 100px !important;
+  }
+
+  .insights-container div h1 {
+    margin-top: 75px !important;
+  }
+
+  .millionaire.wwd div h3 {
+    padding-bottom: 0px !important;
+  }
+
+  div.millionaire.wwd.insights {
+    height: 500px !important;
+  }
+
+  div.millionaire.wwd.insights h1 {
+    line-height: normal !important;
+    font-size: 25px !important;
+  }
+
+  div.millionaire.wwd.insights div {
+    height: 75% !important;
+  }
+
+  iframe #pardot-form .submit input {
+    padding: 22px 45px 22px 45px !important;
+  }
+}
+
+* {
+  font-family: "Gilroy", "open-sans";
+}
