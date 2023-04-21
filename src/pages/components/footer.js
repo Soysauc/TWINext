@@ -23,7 +23,7 @@ export default function Footer() {
 
             <div className='footer-right-nav'>
               <p className='footer__links'>
-                <Link href='/pricing-structure'>Pricing</Link>
+                <Link href='/pricing'>Pricing</Link>
               </p>
               <p className='footer__links'>
                 <Link href='/faq'>FAQ</Link>

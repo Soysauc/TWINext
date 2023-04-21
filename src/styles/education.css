@@ -1,0 +1,775 @@
+.available-for-purchase {
+  color: white;
+  text-align: center;
+}
+
+.education-wrapper h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 90px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education-wrapper {
+  margin-top: 80px;
+}
+
+.roundtable-info {
+  background-color: #072ac6;
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.roundtable-info h1 {
+  padding-top: 75px;
+}
+
+.roundtable-info div {
+  width: 60%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: auto;
+}
+
+.roundtable-info p {
+  text-align: left;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roundtable-signup {
+  color: black !important;
+  background-color: white !important;
+  text-decoration: underline;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: 600 !important;
+}
+
+.roundtable-signup-new {
+  /* color: black !important; */
+  background-color: white !important;
+  /* text-decoration: underline; */
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: 600 !important;
+}
+
+.roundtable-signup2 {
+  color: black !important;
+  background-color: rgb(154, 152, 152) !important;
+  text-decoration: underline;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: 600 !important;
+}
+
+.roundtable-signup3 {
+  color: black !important;
+  background-color: rgb(154, 152, 152) !important;
+  text-decoration: underline;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: 600 !important;
+}
+
+.roundtable-signup4 {
+  color: black !important;
+  background-color: rgb(154, 152, 152) !important;
+  text-decoration: underline;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: 600 !important;
+}
+
+.signup-sheet {
+  background-color: #072ac6;
+  padding-top: 20px;
+  padding-bottom: 75px;
+}
+
+.choose-your-start-date {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.choose-your-start-date2 p {
+  color: black;
+  font-size: 30px !important;
+  text-align: center;
+  font-weight: 600;
+}
+
+.bottom-register-button,
+.bottom-register-button2 {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.choose-your-start-date p {
+  font-size: 40px;
+}
+
+.experts {
+  text-align: center;
+}
+
+.experts img {
+  margin-top: 75px;
+}
+
+.education-sessions {
+  color: black;
+}
+
+.education-sessions h3 {
+  border-bottom: 3px solid #fbc300;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 28px !important;
+}
+
+.education-sessions h5 {
+  font-size: 28px !important;
+  margin-top: 0px;
+}
+
+.education-sessions p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 22px !important;
+}
+
+.topics-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 100px;
+}
+
+.topics {
+  background-image: url("https://walterstaxstrategies.com/wp-content/uploads/2023/01/Vector-36.png");
+  background-size: cover;
+  /* padding-bottom: 150px; */
+  margin-top: 150px;
+}
+
+.edu-closing-div h2 {
+  font-weight: 800;
+}
+
+.edu-closing-div a {
+  background-color: #072ac6 !important;
+  color: white !important;
+}
+
+.edu-closing-div img {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+}
+
+.edu-bottom-grid-right {
+  text-align: center;
+  margin-top: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-image: url("https://walterstaxstrategies.com/wp-content/uploads/2023/01/Ellipse-53.png");
+  background-size: cover;
+  margin-left: -5vw;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.edu-bottom-grid-right h2 {
+  padding-top: 150px;
+}
+
+.edu-bottom-grid-right h3 {
+  font-size: 30px;
+}
+
+.edu-closing-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.closing-div-img {
+  text-align: end;
+  margin-right: -3vw;
+}
+
+.signup-wrapper .css-1bps9go {
+  background-color: white !important;
+}
+
+.MuiBox-root {
+  background-color: white !important;
+}
+
+#gatsby-focus-wrapper
+  > div.education-wrapper
+  > div:nth-child(6)
+  > div
+  > div.MuiBox-root.css-1bps9go
+  > div {
+  background-color: white !important;
+}
+
+.heath-intro-video {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+.heath-intro-video div {
+  width: auto !important;
+}
+
+#gatsby-focus-wrapper
+  > div.education-wrapper
+  > div:nth-child(8)
+  > div
+  > div.MuiBox-root.css-1bps9go
+  > div {
+  background-color: white !important;
+}
+
+.experts-grid-card h5 {
+  font-size: 20px !important;
+  color: black;
+  font-weight: 400;
+  margin-top: 0px;
+}
+
+.bottom-rectangle {
+  background-color: #072ac6;
+  height: 120px;
+}
+
+.experts {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heath-intro-video iframe {
+  width: 70%;
+}
+
+.experts-grid-card {
+  height: 550px;
+}
+
+.experts-grid-card h3 {
+  color: black;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+.experts-grid-card img {
+  height: 350px;
+  width: 350px;
+}
+
+.experts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#gatsby-focus-wrapper
+  > div.education-wrapper
+  > div:nth-child(7)
+  > div
+  > div.MuiBox-root.css-1bps9go
+  > div {
+  background-color: white;
+}
+
+.bottom-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: auto;
+}
+
+.right-column {
+  text-align: end;
+}
+
+.heath-intro-video {
+  margin-bottom: 75px;
+}
+
+.left-column {
+  margin-top: auto;
+  background-image: url("https://walterstaxstrategies.com/wp-content/uploads/2023/01/Ellipse-53.png");
+  background-size: cover;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 65px;
+}
+
+.left-column p {
+  padding-bottom: 30px;
+}
+
+.what-others-are-saying {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.what-others-are-saying h1 {
+  color: black;
+  font-size: 40px;
+}
+
+.what-others-are-saying .quote {
+  color: black;
+  font-weight: 600;
+}
+
+.what-others-are-saying .author {
+  color: black;
+}
+
+.quote2 {
+  align-self: end;
+}
+
+.left-column h3 {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .edu-bottom-grid-right h2 {
+    padding-top: 50px !important;
+  }
+
+  .bottom-register-button,
+  .bottom-register-button2 {
+    font-size: 18px !important;
+  }
+
+  .choose-your-start-date2 p {
+    font-size: 25px !important;
+  }
+
+  .left-column h3 {
+    font-size: 28px !important;
+  }
+
+  .left-column p {
+    padding-bottom: 0px !important;
+  }
+
+  .what-others-are-saying {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .what-others-are-saying .quote {
+    font-size: 25px;
+  }
+  .what-others-are-saying .author {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .left-column h3 {
+    font-size: 24px !important;
+  }
+
+  .left-column p {
+    font-size: 20px !important;
+  }
+
+  .bottom-register-button,
+  .bottom-register-button2 {
+    font-size: 18px !important;
+  }
+
+  .what-others-are-saying {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .bottom-grid {
+    grid-template-columns: 1fr;
+    margin-left: auto !important;
+    width: 95% !important;
+  }
+
+  .right-column {
+    display: none !important;
+  }
+
+  .left-column {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .what-others-are-saying {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .what-others-are-saying .quote {
+    font-size: 25px;
+  }
+  .what-others-are-saying .author {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .bottom-register-button-wrapper {
+    margin-top: 15px !important;
+  }
+
+  .right-column {
+    margin-right: -130px;
+  }
+
+  .bottom-register-button,
+  .bottom-register-button2 {
+    font-size: 20px !important;
+  }
+
+  .left-column h3 {
+    font-size: 21px !important;
+  }
+
+  .bottom-register-button-wrapper {
+    margin: 10px auto 30px !important;
+  }
+
+  .what-others-are-saying {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .choose-your-start-date p {
+    font-size: 19px;
+  }
+
+  .education-wrapper {
+    margin-top: 20px;
+  }
+
+  .available-for-purchase p {
+    margin-top: 25px !important;
+    font-size: 17px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .left-column {
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .left-column h3 {
+    font-size: 18px !important;
+  }
+
+  .left-column p {
+    font-size: 16px !important;
+  }
+
+  .left-column p {
+    padding-bottom: 0px !important;
+  }
+
+  .heath-intro-video div {
+    height: 275px !important;
+  }
+
+  .heath-intro-video {
+    margin-top: 0px !important;
+  }
+
+  .experts {
+    width: 90%;
+  }
+
+  .experts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experts-grid-card img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .education-wrapper h1 {
+    margin-top: 40px;
+    width: 90%;
+    font-size: 23px !important;
+    font-weight: 800;
+    margin-bottom: 0px !important;
+  }
+
+  .education-wrapper h3 {
+    margin-top: 30px;
+  }
+
+  .edu-timer h3 {
+    font-size: 13px !important;
+  }
+
+  .roundtable-info {
+    padding-bottom: 15px;
+  }
+
+  .roundtable-info div {
+    width: 90%;
+  }
+
+  .roundtable-info p {
+    width: 80%;
+    font-size: 13px;
+  }
+
+  .roundtable-info h3 {
+    font-size: 15px !important;
+  }
+
+  /* .signup-sheet div a{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        font-size: 15px !important;
+        text-align: center;
+    } */
+
+  .roundtable-signup {
+    font-size: 12px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+
+  .roundtable-signup {
+    color: black !important;
+    background-color: white !important;
+    text-decoration: underline;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-weight: 600 !important;
+    padding-right: 17px !important;
+    padding-left: 17px !important;
+    font-size: 12px !important;
+    padding-top: 20px !important;
+  }
+
+  .roundtable-signup2 {
+    color: black !important;
+    background-color: rgb(154, 152, 152) !important;
+    text-decoration: underline;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-weight: 600 !important;
+    padding-right: 17px !important;
+    padding-left: 17px !important;
+    font-size: 12px !important;
+    padding-top: 20px !important;
+  }
+
+  .roundtable-signup3 {
+    color: black !important;
+    background-color: rgb(154, 152, 152) !important;
+    text-decoration: underline;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-weight: 600 !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    font-size: 12px !important;
+    padding-top: 20px !important;
+  }
+
+  .roundtable-signup4 {
+    color: black !important;
+    background-color: rgb(154, 152, 152) !important;
+    text-decoration: underline;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-weight: 600 !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    font-size: 12px !important;
+    padding-top: 20px !important;
+  }
+
+  .signup-sheet .MuiBox-root {
+    width: 70%;
+    font-size: 10px;
+  }
+
+  .signup-sheet .MuiBox-root div div {
+    font-size: 15px !important;
+  }
+
+  .topics h1 {
+    font-size: 35px !important;
+  }
+
+  .topics {
+    margin-top: 60px;
+  }
+
+  .experts h1 {
+    font-size: 35px !important;
+  }
+
+  .topics-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .education-sessions h3 {
+    font-size: 25px !important;
+  }
+
+  .experts-grid-card h5 {
+    font-size: 20px !important;
+    color: black;
+  }
+
+  .education-sessions h5 {
+    font-size: 20px !important;
+    margin-bottom: 15px;
+  }
+
+  .education-sessions p {
+    font-size: 15px !important;
+  }
+
+  .edu-closing-div {
+    width: 95%;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .edu-closing-div img {
+    width: 100%;
+  }
+
+  .edu-bottom-grid-right {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .edu-bottom-grid-right h2 {
+    padding-top: 45px;
+    font-size: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .edu-bottom-grid-right h3 {
+    font-size: 12px !important;
+  }
+
+  .edu-bottom-grid-right div {
+    margin: 0px;
+  }
+
+  .edu-bottom-grid-right div a {
+    font-size: 9px !important;
+  }
+
+  .closing-div-img {
+    margin-top: auto;
+  }
+
+  .signup-wrapper .css-1bps9go {
+    max-width: 200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 0px;
+  }
+
+  .MuiInputBase-root {
+    background-color: white;
+  }
+
+  .bottom-register-button-wrapper {
+    margin: 5px auto 15px !important;
+  }
+
+  .bottom-register-button {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 11px !important;
+    margin-top: 0px !important;
+  }
+
+  .bottom-register-button2 {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    font-size: 11px !important;
+    text-decoration: underline;
+  }
+
+  .bottom-rectangle {
+    height: 60px;
+  }
+
+  .experts-grid-card {
+    height: 440px;
+  }
+
+  .right-column p {
+    font-size: 14px !important;
+  }
+
+  .heath-intro-video {
+    margin-bottom: 20px !important;
+  }
+
+  .what-others-are-saying .quote {
+    font-size: 14px;
+  }
+
+  .what-others-are-saying .author {
+    font-size: 14px;
+  }
+
+  .what-others-are-saying {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}

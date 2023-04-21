@@ -221,7 +221,7 @@ export default function PricingStructure() {
                 marginTop: '5px',
               }}
             >
-              $2,500 / mo
+              $1,500 / mo
             </h2>
             <p className='education__card-text'>
               On-demand tax plans and on-call CPAs for more established

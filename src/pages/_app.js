@@ -9,6 +9,7 @@ import '../styles/what-we-do.css';
 import '../styles/pricing.css';
 import '../styles/faq.css';
 import '../styles/insights.css';
+import '../styles/education.css';
 
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
