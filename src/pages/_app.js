@@ -10,6 +10,9 @@ import '../styles/pricing.css';
 import '../styles/faq.css';
 import '../styles/insights.css';
 import '../styles/education.css';
+import '../styles/index.css';
+import '../styles/masterclass-feedback.css';
+import '../styles/summit-23.css';
 
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

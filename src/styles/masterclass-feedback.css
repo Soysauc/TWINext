@@ -1,0 +1,10 @@
+#pardot-form select {
+  height: 500px !important;
+  margin-bottom: 500px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .rt-feedback-form-wrapper iframe {
+    height: 100% !important;
+  }
+}

@@ -1,0 +1,395 @@
+* {
+  font-family: "Gilroy", "open-sans";
+}
+
+div.millionaire.index-bottom-div {
+  margin-top: 100px !important;
+}
+
+.practices {
+  box-shadow: -8.31263px 8.31263px 8.31263px rgba(0, 0, 0, 0.25);
+  border-radius: 58.1884px;
+}
+
+.practices img {
+  box-shadow: -8.31263px 8.31263px 8.31263px rgba(0, 0, 0, 0.25);
+  border-radius: 20.1884px;
+}
+
+.home-ellipse {
+  height: 494px;
+  width: 494px;
+  left: -255px;
+  top: 210px;
+  border-radius: 0px;
+  fill: #fbc300;
+}
+
+iframe.home-form {
+  height: 1250px !important;
+}
+
+.main-text {
+  position: absolute;
+  margin-top: 60px;
+  left: 120px;
+  max-height: 608px;
+}
+
+.carousel-image {
+  height: 100%;
+  max-width: 1600px;
+}
+
+.millionaire {
+  color: white;
+  height: 600px;
+  margin-top: 50px;
+}
+
+.sec-2-ellipse {
+  height: 351px;
+  width: 351px;
+  left: 134px;
+  top: 2019px;
+  border-radius: 0px;
+}
+
+.index-ellipse-mobile {
+  display: none !important;
+}
+
+.index-ellipse-mobile2 {
+  display: none !important;
+}
+
+.mobile {
+  display: none !important;
+}
+
+.desktop {
+  display: flex !important;
+}
+
+.schedule-now:hover {
+  background-color: #3355e9;
+}
+
+@media only screen and (min-width: 2000px) {
+  /* .last-ellipse ellipse{
+        cx: 2200 !important;
+    } */
+}
+
+@media only screen and (min-width: 1400px) {
+  /* .last-ellipse {
+        max-height: 837px !important;
+    } */
+
+  /* .last-ellipse ellipse{
+        cx: 1800 !important;
+        ry: 600 !important;
+        rx: 600 !important;
+    } */
+}
+
+@media only screen and (max-width: 1400px) {
+  div.image-container {
+    width: 65vw !important;
+    margin-left: auto;
+  }
+
+  .millionaire {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .ellipse-6 {
+    display: none !important;
+  }
+  .carousel-container {
+    flex-direction: column !important;
+    height: fit-content !important;
+  }
+
+  .millionaire {
+    margin-top: 50px;
+  }
+  .main-text {
+    margin-top: 75px;
+    margin-bottom: 150px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .carousel-image {
+    height: 565px;
+  }
+
+  div.millionaire {
+    flex-direction: column !important;
+  }
+
+  .millionaire .child-mill {
+    width: 80% !important;
+  }
+
+  .home-ellipse1 {
+    display: inline !important;
+  }
+
+  .image-container {
+    margin-top: 615px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  iframe.home-form {
+    height: 950px !important;
+  }
+  .banner h2 {
+    font-size: 12px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  #pardot-form label {
+    font-size: 15px !important;
+    margin-bottom: 5px !important;
+  }
+
+  div.millionaire.index-bottom-div {
+    margin-top: 250px !important;
+    height: fit-content !important;
+  }
+
+  div.third-home-div.index-testimonials {
+    margin-top: 0px !important;
+  }
+
+  div.third-home-div.finra-wrapper {
+    margin-top: 0px !important;
+  }
+
+  .thid-home-div-header {
+    margin-top: 0px !important;
+  }
+
+  .tool-card-1 {
+    margin-bottom: 30px !important;
+  }
+
+  svg.ellipse-5.desktop {
+    display: none !important;
+  }
+  .ellipse-5 {
+    display: none !important;
+  }
+  .index-ellipse-mobile {
+    display: flex !important;
+    justify-content: start;
+    margin-bottom: -180px;
+  }
+
+  .index-ellipse-mobile2 {
+    display: none !important;
+    margin-bottom: 0 !important;
+  }
+
+  .index-div {
+    display: none !important;
+  }
+
+  .mobile {
+    display: flex !important;
+  }
+
+  .ellipse-5 {
+    display: inline !important;
+    margin-top: 40px !important;
+    margin-bottom: -562px !important;
+  }
+
+  .schedule-now {
+    display: inline !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  div.tool-cards {
+    width: 70% !important;
+  }
+
+  div.tool-cards p {
+    font-size: 60px !important;
+  }
+
+  div.tool-cards h3 {
+    width: 100% !important;
+    margin-top: 0px !important;
+    margin-bottom: 70px !important;
+  }
+
+  div.tool-cards p {
+    width: 100% !important;
+  }
+
+  .image-container {
+    margin-top: 415px;
+  }
+
+  .carousel-image {
+    max-height: 315px;
+  }
+
+  .home-ellipse {
+    width: 250px;
+  }
+
+  .home-ellipse1 {
+    display: none !important;
+  }
+  .hide-on-mobile ellipse {
+    display: none !important;
+  }
+
+  div.image-container {
+    width: 100% !important;
+  }
+
+  .third-home-div {
+    width: 85% !important;
+    margin: auto !important;
+    margin-top: 55px !important;
+  }
+
+  .tool-cards p {
+    font-size: 90px !important;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  div.main-text {
+    margin-top: 40px !important;
+    text-align: center !important;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  div.main-text h1 {
+    font-size: 27px !important;
+  }
+
+  div.main-text h3 {
+    font-size: 17px !important;
+  }
+  .carousel-container {
+    align-items: center;
+  }
+
+  div.main-text a {
+    font-size: 17px !important;
+  }
+
+  .index-ellipse-1 svg {
+    display: flex;
+  }
+
+  .index-ellipse-1 ellipse {
+    cx: -30;
+    cy: 150;
+    ry: 140;
+    rx: 140;
+  }
+
+  .ellipse-5 circle {
+    cx: -15;
+    cy: 130;
+    r: 85;
+  }
+
+  div.third-home-div {
+    margin-top: 0px !important;
+  }
+
+  div.third-home-div h1 {
+    font-size: 25px !important;
+    width: 90% !important;
+    margin-top: 15px !important;
+    margin-left: 5%;
+  }
+
+  div.third-home-div.mobile-div {
+    margin-top: 10px !important;
+  }
+
+  .finra {
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    margin-bottom: 70px !important;
+  }
+
+  div.third-home-div h2 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+
+  div.third-home-div h5 {
+    font-size: 12px !important;
+  }
+
+  /* div.third-home-div.sec2 {
+        width: 95% !important;
+    } */
+
+  div.third-home-di.sec2.test3 {
+    width: 70% !important;
+    margin-left: auto !important;
+    margin-right: 0px !important;
+    margin-top: 30px !important;
+  }
+
+  .sec2-h2 {
+    margin-left: 0px !important;
+  }
+
+  div.third-home-div.sec2.test4 {
+    margin-top: 25px !important;
+    margin-bottom: -200px !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ellipse-15 {
+    margin-bottom: -180px !important;
+    margin-top: -200px !important;
+  }
+
+  .millionaire.mobile {
+    height: 780px !important;
+    margin-top: 0 !important;
+  }
+
+  /* .third-home-div.index-testimonials h1{
+        margin-bottom: 0px !important;
+        font-size: 27px !important;
+        margin-left: 5% !important;
+    }
+
+    .third-home-div.sec2 h2{
+        margin-top: 0 !important;
+    }*/
+
+  div.third-home-div.sec2 {
+    margin-top: 30px !important;
+  }
+}
