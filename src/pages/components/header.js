@@ -1,5 +1,5 @@
-import * as React from "react"
-import { Menu, X } from "react-feather"
+import * as React from 'react';
+import { XIcon, HamburgerIcon } from './Symbols';
 import {
   Container,
   Flex,
@@ -12,7 +12,7 @@ import {
   VisuallyHidden,
   Div,
   Link,
-} from "./ui"
+} from './ui';
 import {
   mobileNavOverlay,
   mobileNavLink,
@@ -20,105 +20,105 @@ import {
   mobileHeaderNavWrapper,
   mobileNavSVGColorWrapper,
   ctaButton,
-} from "./header.css.ts"
-import BrandLogo from "./brand-logo"
-import "./header.css"
+} from './header.css.ts';
+import BrandLogo from './brand-logo';
+import './header.css';
 
 const data = {
   navItems: [
     {
       id: 0,
-      navItemType: "Link",
-      href: "/who-we-are",
-      text: "Who We Are",
+      navItemType: 'Link',
+      href: '/who-we-are',
+      text: 'Who We Are',
     },
     {
       id: 1,
-      navItemType: "Link",
-      href: "/what-we-do",
-      text: "What We Do",
+      navItemType: 'Link',
+      href: '/what-we-do',
+      text: 'What We Do',
     },
     {
       id: 2,
-      navItemType: "Link",
-      href: "/pricing-structure",
-      text: "Pricing",
+      navItemType: 'Link',
+      href: '/pricing-structure',
+      text: 'Pricing',
     },
     {
       id: 3,
-      navItemType: "Link",
-      href: "/faq",
-      text: "FAQ",
+      navItemType: 'Link',
+      href: '/faq',
+      text: 'FAQ',
     },
     {
       id: 4,
-      navItemType: "Link",
-      href: "/insights",
-      text: "Insights",
+      navItemType: 'Link',
+      href: '/insights',
+      text: 'Insights',
     },
 
     {
       id: 5,
-      navItemType: "Link",
-      href: "/education",
-      text: "Education",
+      navItemType: 'Link',
+      href: '/education',
+      text: 'Education',
     },
-    // {
-    //   id: 6,
-    //   navItemType: "Link",
-    //   href: `http://education.thewaltersinstitute.org`,
-    //   text: "Portal",
-    // },
-    // {
-    //   id: 7,
-    //   navItemType: "Link",
-    //   href: "/education",
-    //   text: "MasterClass",
-    // },
+    {
+      id: 6,
+      navItemType: 'Link',
+      href: `http://education.thewaltersinstitute.org`,
+      text: 'Portal',
+    },
+    {
+      id: 7,
+      navItemType: 'Link',
+      href: '/education',
+      text: 'MasterClass',
+    },
   ],
   cta: {
-    href: "contact-us",
-    text: "Contact",
+    href: 'contact-us',
+    text: 'Contact',
   },
-}
+};
 
 export default function Header() {
-  const { navItems, cta } = data
-  const [isOpen, setOpen] = React.useState(false)
+  const { navItems, cta } = data;
+  const [isOpen, setOpen] = React.useState(false);
 
   React.useEffect(() => {
     if (isOpen) {
-      document.body.style.overflowY = "hidden"
+      document.body.style.overflowY = 'hidden';
     } else {
-      document.body.style.overflowY = "visible"
+      document.body.style.overflowY = 'visible';
     }
-  }, [isOpen])
+  }, [isOpen]);
 
   return (
-    <header style={{ position: "relative", zIndex: "9999" }}>
+    <header style={{ position: 'relative', zIndex: '9999' }}>
       <div
-        className="banner"
-        style={{ backgroundColor: "#072AC6", textAlign: "center" }}
+        className='banner'
+        style={{ backgroundColor: '#072AC6', textAlign: 'center' }}
       >
         <h2
           style={{
-            color: "white",
-            paddingTop: "20px",
-            paddingBottom: "20px",
+            color: 'white',
+            paddingTop: '20px',
+            paddingBottom: '20px',
           }}
         >
-          Save the date! Our next Masterclass starts{" "}
-          <Link to="/education">March 21st @ 9:30am EST</Link>
+          Save the date! Our next Masterclass starts{' '}
+          <Link to='/education'>March 21st @ 9:30am EST</Link>
         </h2>
       </div>
       <link
-        rel="stylesheet"
-        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+        rel='stylesheet'
+        href='https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css'
       />
       <Container className={desktopHeaderNavWrapper}>
         <Space size={2} />
-        <Flex variant="spaceBetween">
-          <NavLink to="/">
+        <Flex variant='spaceBetween'>
+          <NavLink to='/'>
             <VisuallyHidden>Home</VisuallyHidden>
             <BrandLogo />
           </NavLink>
@@ -129,12 +129,12 @@ export default function Header() {
                   <li key={navItem.id}>
                     <NavLink
                       style={{
-                        fontWeight: "400",
-                        color: "black",
-                        fontSize: "22px",
+                        fontWeight: '400',
+                        color: 'black',
+                        fontSize: '22px',
                       }}
                       to={`${navItem.href}`}
-                      className="nav-links"
+                      className='nav-links'
                     >
                       {navItem.text}
                     </NavLink>
@@ -144,22 +144,22 @@ export default function Header() {
           </nav>
           <Div className={ctaButton}>
             {cta && (
-              <Button to={`/${cta.href}`} className="contact-us-button">
+              <Button to={`/${cta.href}`} className='contact-us-button'>
                 {cta.text}
               </Button>
             )}
           </Div>
         </Flex>
       </Container>
-      <Container className={mobileHeaderNavWrapper[isOpen ? "open" : "closed"]}>
+      <Container className={mobileHeaderNavWrapper[isOpen ? 'open' : 'closed']}>
         <Space size={2} />
-        <Flex variant="spaceBetween">
+        <Flex variant='spaceBetween'>
           <span
             className={
-              mobileNavSVGColorWrapper[isOpen ? "reversed" : "primary"]
+              mobileNavSVGColorWrapper[isOpen ? 'reversed' : 'primary']
             }
           >
-            <NavLink to="">
+            <NavLink to=''>
               <VisuallyHidden>Home</VisuallyHidden>
               <BrandLogo />
             </NavLink>
@@ -169,13 +169,13 @@ export default function Header() {
 
             <Nudge right={3}>
               <InteractiveIcon
-                title="Toggle menu"
+                title='Toggle menu'
                 onClick={() => setOpen(!isOpen)}
                 className={
-                  mobileNavSVGColorWrapper[isOpen ? "reversed" : "primary"]
+                  mobileNavSVGColorWrapper[isOpen ? 'reversed' : 'primary']
                 }
               >
-                {isOpen ? <X /> : <Menu />}
+                {isOpen ? <XIcon /> : <HamburgerIcon />}
               </InteractiveIcon>
             </Nudge>
           </Flex>
@@ -184,7 +184,7 @@ export default function Header() {
       {isOpen && (
         <div className={mobileNavOverlay}>
           <nav>
-            <FlexList responsive variant="stretch">
+            <FlexList responsive variant='stretch'>
               {navItems?.map((navItem) => (
                 <li key={navItem.id}>
                   <NavLink to={`${navItem.href}`} className={mobileNavLink}>
@@ -196,9 +196,9 @@ export default function Header() {
                 <NavLink
                   className={mobileNavLink}
                   style={{
-                    fontWeight: "400",
-                    color: "white",
-                    fontSize: "22px",
+                    fontWeight: '400',
+                    color: 'white',
+                    fontSize: '22px',
                   }}
                   to={`/contact-us`}
                 >
@@ -210,5 +210,5 @@ export default function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }
