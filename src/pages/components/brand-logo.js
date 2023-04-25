@@ -7,12 +7,10 @@ export default function BrandLogo() {
       className='logo-container'
       style={{ display: 'flex', alignItems: 'center' }}
     >
-      <Image
+      <img
         style={{ maxWidth: '290px' }}
-        src='/TWILogo.png'
+        src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/TWI-Updated-Logo-35.png'
         alt='logo'
-        width={50}
-        height={50}
       />
     </div>
   );

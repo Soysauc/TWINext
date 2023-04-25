@@ -1,28 +1,92 @@
 import * as React from 'react';
 import { XIcon, HamburgerIcon } from './Symbols';
-import {
-  Container,
-  Flex,
-  FlexList,
-  Space,
-  NavLink,
-  Button,
-  InteractiveIcon,
-  Nudge,
-  VisuallyHidden,
-  Div,
-  Link,
-} from './ui';
-import {
-  mobileNavOverlay,
-  mobileNavLink,
-  desktopHeaderNavWrapper,
-  mobileHeaderNavWrapper,
-  mobileNavSVGColorWrapper,
-  ctaButton,
-} from './header.css.ts';
+
 import BrandLogo from './brand-logo';
-import './header.css';
+
+const desktopHeaderNavWrapper = 'desktop-header-nav-wrapper';
+const mobileHeaderNavWrapper = {
+  open: 'mobile-header-nav-wrapper open',
+  closed: 'mobile-header-nav-wrapper closed',
+};
+const mobileNavOverlay = 'mobile-nav-overlay';
+const mobileNavLink = 'mobile-nav-link';
+const mobileNavSVGColorWrapper = {
+  primary: 'mobile-nav-svg-color-wrapper primary',
+  reversed: 'mobile-nav-svg-color-wrapper reversed',
+};
+const ctaButton = 'cta-button';
+
+function Container({ className, children }) {
+  return <div className={`container ${className || ''}`}>{children}</div>;
+}
+
+function Space({ size }) {
+  return <div style={{ height: size }} />;
+}
+
+function Flex({ variant, children }) {
+  const justifyContent =
+    variant === 'spaceBetween' ? 'space-between' : 'center';
+  return <div style={{ display: 'flex', justifyContent }}>{children}</div>;
+}
+
+function FlexList({ gap, responsive, variant, children }) {
+  const flexDirection = responsive ? 'column' : 'row';
+  const alignItems = variant === 'stretch' ? 'stretch' : 'center';
+  const listStyleType = 'none';
+  const liStyle = { marginBottom: gap, marginRight: gap };
+  return (
+    <ul style={{ listStyleType, display: 'flex', flexDirection, alignItems }}>
+      {React.Children.map(children, (child) => (
+        <li style={liStyle}>{child}</li>
+      ))}
+    </ul>
+  );
+}
+
+function NavLink({ to, children, ...props }) {
+  return (
+    <a href={to} {...props}>
+      {children}
+    </a>
+  );
+}
+
+function Button({ to, children, ...props }) {
+  return (
+    <a href={to} {...props}>
+      {children}
+    </a>
+  );
+}
+
+function InteractiveIcon({ title, onClick, children, ...props }) {
+  return (
+    <button type='button' title={title} onClick={onClick} {...props}>
+      {children}
+    </button>
+  );
+}
+
+function Nudge({ right, children }) {
+  return <div style={{ marginRight: right }}>{children}</div>;
+}
+
+function VisuallyHidden({ children }) {
+  return (
+    <span style={{ position: 'absolute', clip: 'rect(0 0 0 0)' }}>
+      {children}
+    </span>
+  );
+}
+
+function Div({ className, children }) {
+  return <div className={className}>{children}</div>;
+}
+
+function Link({ to, children }) {
+  return <a href={to}>{children}</a>;
+}
 
 const data = {
   navItems: [
