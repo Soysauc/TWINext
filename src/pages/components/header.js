@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import { XIcon, HamburgerIcon } from './Symbols';
+import { button, buttons } from './ui.css';
+// import Button from './ui.css';
+
+function MyButton({ variant, children }) {
+  return <button className={buttons[variant]}>{children}</button>;
+}
 
 import BrandLogo from './brand-logo';
 
@@ -69,9 +75,29 @@ function NavLink({ to, children, ...props }) {
 
 function Button({ to, children, ...props }) {
   return (
-    <a href={to} {...props}>
-      {children}
-    </a>
+    <div
+      style={{
+        width: '120px',
+        height: '50px',
+        backgroundColor: 'blue',
+        borderRadius: '100px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <a
+        style={{
+          color: 'white',
+          fontSize: '20px',
+          textDecoration: 'none',
+        }}
+        href={to}
+        {...props}
+      >
+        {children}
+      </a>
+    </div>
   );
 }
 
@@ -100,7 +126,11 @@ function Div({ className, children }) {
 }
 
 function Link({ to, children }) {
-  return <a href={to}>{children}</a>;
+  return (
+    <a style={{ color: 'white' }} href={to}>
+      {children}
+    </a>
+  );
 }
 
 const data = {
@@ -220,7 +250,12 @@ export default function Header() {
           }}
         >
           Save the date! Our next Masterclass starts{' '}
-          <Link to='/education'>May 9st @ 11:00am EST</Link>
+          <Link
+            style={{ color: 'white', textDecoration: 'none' }}
+            to='/education'
+          >
+            May 9st @ 11:00am EST
+          </Link>
         </h2>
       </div>
       <link
@@ -228,14 +263,14 @@ export default function Header() {
         href='https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css'
       />
       <Container className={desktopHeaderNavWrapper}>
-        <Space size={2} />
-        <Flex variant='spaceBetween'>
+        <Space size={40} />
+        <Flex variant='spaceAround'>
           <NavLink to='/'>
             <VisuallyHidden>Home</VisuallyHidden>
             <BrandLogo />
           </NavLink>
           <nav>
-            <FlexList gap={4}>
+            <FlexList gap={45}>
               {navItems &&
                 navItems.map((navItem) => (
                   <li key={navItem.id}>
@@ -253,6 +288,7 @@ export default function Header() {
                             fontWeight: '400',
                             color: 'black',
                             fontSize: '22px',
+                            gap: '20px',
                           }}
                           className='nav-links'
                         >

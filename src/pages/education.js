@@ -5,6 +5,7 @@ import Layout from './components/layout';
 // import { Button } from "../components/ui"
 // import Box from "@mui/material/Box"
 import Image from 'next/image';
+
 import ReactPlayer from 'react-player';
 
 export default function Education() {

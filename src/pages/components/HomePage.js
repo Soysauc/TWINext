@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Layout from '../components/layout';
 // import { Button, Link } from '../components/ui';
+import Button from './ui.css';
 import { useMediaQuery } from 'react-responsive';
 export default function Homepage({ data }) {
   const [open, setOpen] = React.useState(true);
@@ -57,7 +58,7 @@ export default function Homepage({ data }) {
               On-demand tax planning for financial <br></br> advisors and their
               HNW clients.
             </h3>
-            {/* <Button
+            <Button
               to='https://calendly.com/d/dvj-7hw-fd9/intro-virtual-meeting-with-the-walters-institute'
               className='schedule-now'
               style={{
@@ -70,7 +71,7 @@ export default function Homepage({ data }) {
               }}
             >
               Schedule a call
-            </Button> */}
+            </Button>
           </div>
           <div
             className='image-container'
