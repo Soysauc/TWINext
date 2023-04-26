@@ -1,13 +1,19 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { XIcon, HamburgerIcon } from './Symbols';
 
 import BrandLogo from './brand-logo';
 
 const desktopHeaderNavWrapper = 'desktop-header-nav-wrapper';
+// const mobileHeaderNavWrapper = {
+//   open: 'mobile-header-nav-wrapper open',
+//   closed: 'mobile-header-nav-wrapper closed',
+// };
 const mobileHeaderNavWrapper = {
   open: 'mobile-header-nav-wrapper open',
   closed: 'mobile-header-nav-wrapper closed',
+  closedStyle: { display: 'none' },
 };
+
 const mobileNavOverlay = 'mobile-nav-overlay';
 const mobileNavLink = 'mobile-nav-link';
 const mobileNavSVGColorWrapper = {
@@ -36,9 +42,18 @@ function FlexList({ gap, responsive, variant, children }) {
   const listStyleType = 'none';
   const liStyle = { marginBottom: gap, marginRight: gap };
   return (
-    <ul style={{ listStyleType, display: 'flex', flexDirection, alignItems }}>
-      {React.Children.map(children, (child) => (
-        <li style={liStyle}>{child}</li>
+    <ul
+      style={{
+        listStyleType,
+        display: 'flex',
+        flexDirection,
+        alignItems,
+      }}
+    >
+      {React.Children.map(children, (child, index) => (
+        <li key={index} style={liStyle}>
+          {child}
+        </li>
       ))}
     </ul>
   );
@@ -120,24 +135,24 @@ const data = {
       href: '/insights',
       text: 'Insights',
     },
-
     {
       id: 5,
-      navItemType: 'Link',
-      href: '/education',
+      navItemType: 'Dropdown',
       text: 'Education',
-    },
-    {
-      id: 6,
-      navItemType: 'Link',
-      href: `http://education.thewaltersinstitute.org`,
-      text: 'Portal',
-    },
-    {
-      id: 7,
-      navItemType: 'Link',
-      href: '/education',
-      text: 'MasterClass',
+      children: [
+        {
+          id: 6,
+          navItemType: 'Link',
+          href: `http://education.thewaltersinstitute.org`,
+          text: 'Portal',
+        },
+        {
+          id: 7,
+          navItemType: 'Link',
+          href: '/education',
+          text: 'MasterClass',
+        },
+      ],
     },
   ],
   cta: {
@@ -145,18 +160,49 @@ const data = {
     text: 'Contact',
   },
 };
+const dropdownMenu = {
+  position: 'absolute',
+  backgroundColor: '#072AC6',
+  boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)',
+  zIndex: 1,
+  display: 'none',
+  opacity: 0,
+  transition: 'opacity 0.3s ease',
+};
 
+const dropdownItem = {
+  fontWeight: '400',
+  color: 'white',
+  fontSize: '18px',
+  display: 'block',
+  padding: '12px 16px',
+  textDecoration: 'none',
+};
 export default function Header() {
   const { navItems, cta } = data;
-  const [isOpen, setOpen] = React.useState(false);
+  const [isOpen, setOpen] = useState(false);
+  const [dropdownVisibility, setDropdownVisibility] = useState({});
+
+  const handleMouseEnter = (id) => {
+    setDropdownVisibility({ ...dropdownVisibility, [id]: true });
+  };
+
+  const handleMouseLeave = (id) => {
+    setDropdownVisibility({ ...dropdownVisibility, [id]: false });
+  };
+  const [isMounted, setIsMounted] = React.useState(false);
 
   React.useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflowY = 'hidden';
-    } else {
-      document.body.style.overflowY = 'visible';
-    }
-  }, [isOpen]);
+    setIsMounted(true);
+  }, []);
+
+  // React.useEffect(() => {
+  //   if (isOpen) {
+  //     document.body.style.overflowY = 'hidden';
+  //   } else {
+  //     document.body.style.overflowY = 'visible';
+  //   }
+  // }, [isOpen]);
 
   return (
     <header style={{ position: 'relative', zIndex: '9999' }}>
@@ -172,7 +218,7 @@ export default function Header() {
           }}
         >
           Save the date! Our next Masterclass starts{' '}
-          <Link to='/education'>March 21st @ 9:30am EST</Link>
+          <Link to='/education'>May 9st @ 11:00am EST</Link>
         </h2>
       </div>
       <link
@@ -191,17 +237,60 @@ export default function Header() {
               {navItems &&
                 navItems.map((navItem) => (
                   <li key={navItem.id}>
-                    <NavLink
-                      style={{
-                        fontWeight: '400',
-                        color: 'black',
-                        fontSize: '22px',
-                      }}
-                      to={`${navItem.href}`}
-                      className='nav-links'
-                    >
-                      {navItem.text}
-                    </NavLink>
+                    {navItem.navItemType === 'Dropdown' ? (
+                      <div
+                        style={{
+                          position: 'relative',
+                          display: 'inline-block',
+                        }}
+                        onMouseEnter={() => handleMouseEnter(navItem.id)}
+                        onMouseLeave={() => handleMouseLeave(navItem.id)}
+                      >
+                        <span
+                          style={{
+                            fontWeight: '400',
+                            color: 'black',
+                            fontSize: '22px',
+                          }}
+                          className='nav-links'
+                        >
+                          {navItem.text}
+                        </span>
+                        <div
+                          id={`dropdown-${navItem.id}`}
+                          style={{
+                            ...dropdownMenu,
+                            display: dropdownVisibility[navItem.id]
+                              ? 'block'
+                              : 'none',
+                            opacity: dropdownVisibility[navItem.id] ? 1 : 0,
+                          }}
+                        >
+                          {navItem.children.map((child) => (
+                            <NavLink
+                              key={child.id}
+                              style={dropdownItem}
+                              to={`${child.href}`}
+                              className='nav-links'
+                            >
+                              {child.text}
+                            </NavLink>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <NavLink
+                        style={{
+                          fontWeight: '400',
+                          color: 'black',
+                          fontSize: '22px',
+                        }}
+                        to={`${navItem.href}`}
+                        className='nav-links'
+                      >
+                        {navItem.text}
+                      </NavLink>
+                    )}
                   </li>
                 ))}
             </FlexList>
@@ -215,7 +304,11 @@ export default function Header() {
           </Div>
         </Flex>
       </Container>
-      <Container className={mobileHeaderNavWrapper[isOpen ? 'open' : 'closed']}>
+      <Container
+        className={mobileHeaderNavWrapper[isOpen ? 'open' : 'closed']}
+        style={isOpen ? null : mobileHeaderNavWrapper.closedStyle}
+      >
+        {' '}
         <Space size={2} />
         <Flex variant='spaceBetween'>
           <span
@@ -239,13 +332,13 @@ export default function Header() {
                   mobileNavSVGColorWrapper[isOpen ? 'reversed' : 'primary']
                 }
               >
-                {isOpen ? <XIcon /> : <HamburgerIcon />}
+                g{isOpen ? <XIcon /> : <HamburgerIcon />}
               </InteractiveIcon>
             </Nudge>
           </Flex>
         </Flex>
       </Container>
-      {isOpen && (
+      {isMounted && isOpen && (
         <div className={mobileNavOverlay}>
           <nav>
             <FlexList responsive variant='stretch'>
