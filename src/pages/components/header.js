@@ -305,7 +305,7 @@ export default function Header() {
           </Div>
         </Flex>
       </Container>
-      <Container
+      {/* <Container
         className={mobileHeaderNavWrapper[isOpen ? 'open' : 'closed']}
         style={isOpen ? null : mobileHeaderNavWrapper.closedStyle}
       >
@@ -338,7 +338,7 @@ export default function Header() {
             </Nudge>
           </Flex>
         </Flex>
-      </Container>
+      </Container> */}
       {isMounted && isOpen && (
         <div className={mobileNavOverlay}>
           <nav>
