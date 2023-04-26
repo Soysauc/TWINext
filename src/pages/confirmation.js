@@ -3,9 +3,8 @@ import * as React from 'react';
 import Layout from './components/layout';
 // import SEOHead from "../components/head"
 // import { Button } from "../components/ui"
-// import "./education.css"
 // import Box from "@mui/material/Box"
-// import ReactPlayer from "react-player"
+import ReactPlayer from 'react-player';
 // import { StaticImage } from "gatsby-plugin-image"
 
 export default function Confirmation() {
@@ -24,14 +23,14 @@ export default function Confirmation() {
             Congratulations!
           </h1>
           <div className='heath-intro-video' style={{ marginTop: '50px' }}>
-            {/* <ReactPlayer
+            <ReactPlayer
               volume={0}
               muted='true'
               playsinline='true'
               controls='true'
               playing='true'
               url='https://player.vimeo.com/video/787077938?h=1cbe16e450&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
-            /> */}
+            />
           </div>
 
           <div

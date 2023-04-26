@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from './components/layout';
 import Image from 'next/image';
 // import { Button } from "../components/ui.js"
-// import "./what-we-do.css"
 // import SEOHead from "../components/head"
 
 export default function WhatWeDo() {
@@ -18,9 +17,12 @@ export default function WhatWeDo() {
             </h3>
           </div>
           <div className='wwd__image-container'>
-            <img
+            <Image
               className='wwd-carousel-image'
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/Group-of-People-1-copy.png'
+              width={1000}
+              height={750}
+              alt='people'
             />
           </div>
         </div>

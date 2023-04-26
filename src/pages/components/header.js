@@ -181,15 +181,17 @@ const dropdownItem = {
 export default function Header() {
   const { navItems, cta } = data;
   const [isOpen, setOpen] = useState(false);
-  const [dropdownVisibility, setDropdownVisibility] = useState({});
+  const [hoveredDropdown, setHoveredDropdown] = useState(null);
 
-  const handleMouseEnter = (id) => {
-    setDropdownVisibility({ ...dropdownVisibility, [id]: true });
-  };
+  // const [dropdownVisibility, setDropdownVisibility] = useState({});
 
-  const handleMouseLeave = (id) => {
-    setDropdownVisibility({ ...dropdownVisibility, [id]: false });
-  };
+  // const handleMouseEnter = (id) => {
+  //   setDropdownVisibility({ ...dropdownVisibility, [id]: true });
+  // };
+
+  // const handleMouseLeave = (id) => {
+  //   setDropdownVisibility({ ...dropdownVisibility, [id]: false });
+  // };
   const [isMounted, setIsMounted] = React.useState(false);
 
   React.useEffect(() => {
@@ -243,8 +245,8 @@ export default function Header() {
                           position: 'relative',
                           display: 'inline-block',
                         }}
-                        onMouseEnter={() => handleMouseEnter(navItem.id)}
-                        onMouseLeave={() => handleMouseLeave(navItem.id)}
+                        onMouseEnter={() => setHoveredDropdown(navItem.id)}
+                        onMouseLeave={() => setHoveredDropdown(null)}
                       >
                         <span
                           style={{
@@ -260,10 +262,9 @@ export default function Header() {
                           id={`dropdown-${navItem.id}`}
                           style={{
                             ...dropdownMenu,
-                            display: dropdownVisibility[navItem.id]
-                              ? 'block'
-                              : 'none',
-                            opacity: dropdownVisibility[navItem.id] ? 1 : 0,
+                            display:
+                              hoveredDropdown === navItem.id ? 'block' : 'none',
+                            opacity: hoveredDropdown === navItem.id ? 1 : 0,
                           }}
                         >
                           {navItem.children.map((child) => (
@@ -332,7 +333,7 @@ export default function Header() {
                   mobileNavSVGColorWrapper[isOpen ? 'reversed' : 'primary']
                 }
               >
-                g{isOpen ? <XIcon /> : <HamburgerIcon />}
+                {isOpen ? <XIcon /> : <HamburgerIcon />}
               </InteractiveIcon>
             </Nudge>
           </Flex>

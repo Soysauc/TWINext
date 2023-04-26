@@ -144,12 +144,12 @@ export default function WhoWeAre() {
           }}
         >
           <div className='icon-wrapper'>
-            {/* <Image
-              width={50}
-              height={50}
+            <Image
+              width={179}
+              height={179}
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/award.png'
               alt='award'
-            /> */}
+            />
           </div>
           <div
             style={{
@@ -183,10 +183,12 @@ export default function WhoWeAre() {
           }}
         >
           <div className='icon-wrapper'>
-            {/* <Image
+            <Image
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/target.png'
               alt='target'
-            /> */}
+              width={179}
+              height={179}
+            />
           </div>
           <div
             style={{
@@ -221,10 +223,12 @@ export default function WhoWeAre() {
           }}
         >
           <div className='icon-wrapper'>
-            {/* <Image
+            <Image
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/certificate.png'
               alt='ribbon'
-            /> */}
+              width={179}
+              height={179}
+            />
           </div>
           <div
             style={{
@@ -281,7 +285,7 @@ export default function WhoWeAre() {
             color: 'black',
           }}
         >
-          We`&#39;`re family here.
+          We&#39;re family here.
         </h3>
         <svg
           className='cv-ellip-2'
@@ -342,8 +346,8 @@ export default function WhoWeAre() {
             through tax mitigation.<br></br>
             <br></br>
             When he’s not busy helping his clients double and even triple their
-            revenues, you’ll find him fishing, grilling, and tackling home reno
-            projects.
+            revenues, you’ll find him fishing, grilling, and tackling home
+            renovation projects.
           </h3>
         </div>
       </div>
@@ -581,11 +585,12 @@ export default function WhoWeAre() {
               alt='liz-ellipse-headshot'
             />
           </div>
-          <h3
+          <div
             className='liz-bio-title'
             style={{
               fontSize: '30px',
               fontWeight: '600',
+              marginTop: '75px',
               color: 'black',
               width: '50%',
             }}
@@ -613,7 +618,7 @@ export default function WhoWeAre() {
             >
               Executive Assistant
             </h4>
-          </h3>
+          </div>
         </div>
         <div className='biocard-2'>
           <h3 style={{ width: '90%', color: 'black', fontWeight: '500' }}>

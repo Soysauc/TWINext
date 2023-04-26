@@ -4,7 +4,8 @@ import Layout from './components/layout';
 // import SEOHead from "../components/head"
 // import { Button } from "../components/ui"
 // import Box from "@mui/material/Box"
-// import ReactPlayer from "react-player"
+import Image from 'next/image';
+import ReactPlayer from 'react-player';
 
 export default function Education() {
   const [rtdate] = React.useState('');
@@ -17,14 +18,14 @@ export default function Education() {
             Master the language of tax strategy and win more HNW clients.
           </h1>
           <div className='heath-intro-video'>
-            {/* <ReactPlayer
+            <ReactPlayer
               volume={0}
-              muted="true"
-              playsinline="true"
-              controls="true"
-              playing="true"
-              url="https://player.vimeo.com/video/787077938?h=1cbe16e450&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            /> */}
+              muted='true'
+              playsinline='true'
+              controls='true'
+              playing='true'
+              url='https://player.vimeo.com/video/787077938?h=1cbe16e450&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+            />
           </div>
           <div className='roundtable-info'>
             <h1 style={{ color: 'white' }}>
@@ -292,42 +293,53 @@ export default function Education() {
             <h1 style={{ color: 'black' }}>The Experts</h1>
             <div className='experts-grid'>
               <div className='experts-grid-card'>
-                <img
+                <Image
                   src='https://walterstaxstrategies.com/wp-content/uploads/2023/01/heath-vertex.png'
                   alt='heath-headshot'
+                  width={350}
+                  height={350}
                 />
                 <h3>Heath Walters, CPA</h3>
                 <h5>The Walters Institute</h5>
               </div>
               <div className='experts-grid-card'>
-                <img
+                <Image
                   src='https://walterstaxstrategies.com/wp-content/uploads/2023/01/gus-vertex.png'
                   alt='heath-headshot'
+                  width={350}
+                  height={350}
                 />
                 <h3>Gus Gotsis, President</h3>
                 <h5>Accurate Advisory Group</h5>
               </div>
               <div className='experts-grid-card'>
-                <img
+                <Image
                   src='https://walterstaxstrategies.com/wp-content/uploads/2023/01/rob-vertex.png'
                   alt='heath-headshot'
+                  width={350}
+                  height={350}
                 />
                 <h3>Robert Leone, CTFA</h3>
                 <h5>Accurate Advisory Group</h5>
               </div>
               <div className='experts-grid-card'>
-                <img
-                  src='https://walterstaxstrategies.com/wp-content/uploads/2023/01/Untitled-3.png'
+                <Image
+                  src='/Group 257.png'
+                  width={410}
+                  height={410}
                   alt='heath-headshot'
+                  style={{ marginTop: '25px', marginLeft: '50px' }}
                 />
                 <h3>Daniel Goodwin, Founder</h3>
                 <h5>Provident1031.com</h5>
               </div>
             </div>
             <div className='experts-grid-card'>
-              <img
+              <Image
                 src='https://walterstaxstrategies.com/wp-content/uploads/2023/01/matt-vertex.png'
                 alt='heath-headshot'
+                width={350}
+                height={350}
               />
               <h3>Matt Leonard, CPA</h3>
               <h5>Leonard & Leonard CPAs</h5>

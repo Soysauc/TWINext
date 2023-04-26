@@ -13,6 +13,7 @@ import '../styles/education.css';
 import '../styles/index.css';
 import '../styles/masterclass-feedback.css';
 import '../styles/summit-23.css';
+import '../styles/global.css';
 
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

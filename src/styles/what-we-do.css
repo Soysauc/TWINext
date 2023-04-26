@@ -14,9 +14,7 @@
   height: auto;
   margin-top: 0;
 }
-.wwd-carousel-image {
-  height: 800px;
-}
+
 .wwd__process {
   display: flex;
   flex-direction: row;
