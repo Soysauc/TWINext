@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from './components/layout';
 import Link from 'next/link';
 import Image from 'next/image';
-import Button from './components/ui.css';
 // import SEOHead from "../components/head"
 
 export default function WhatWeDo() {

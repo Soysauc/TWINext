@@ -319,11 +319,11 @@ export default function Summit23() {
   )
 }
 
-export const Head = (props) => {
-  props.data.title = "The Financial Innovation Summit | The Walters Institute"
-  props.data.description =
-    "At the Summit, you'll learn powerful strategies for tax mitigation, how to build credibility with wealthy individuals, and the shortest path to mastering skills that make you invaluable to high-net-worth clients"
-  const { homepage } = props.data
+// export const Head = (props) => {
+//   props.data.title = "The Financial Innovation Summit | The Walters Institute"
+//   props.data.description =
+//     "At the Summit, you'll learn powerful strategies for tax mitigation, how to build credibility with wealthy individuals, and the shortest path to mastering skills that make you invaluable to high-net-worth clients"
+//   const { homepage } = props.data
 
-  return <SEOHead {...props.data} />
-}
+//   return <SEOHead {...props.data} />
+// }

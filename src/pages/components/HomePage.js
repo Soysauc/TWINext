@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/layout';
 import Link from 'next/link';
-// import { Button, Link } from '../components/ui';
-import Button from './ui.css';
 import { useMediaQuery } from 'react-responsive';
 export default function Homepage({ data }) {
   const [open, setOpen] = React.useState(true);
@@ -35,12 +33,7 @@ export default function Homepage({ data }) {
             style={{ fill: '#FBC300', height: '494px', width: '494px' }}
           />
         </svg>
-        {/* <div className='index-ellipse-mobile'>
-          <img
-            src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/Ellipse-5-1.png'
-            alt='index-ellipse-1'
-          />
-        </div> */}
+
         <div
           className='carousel-container'
           style={{ display: 'flex', flexDirection: 'row' }}

@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from './components/layout';
-import Button from './components/ui.css';
 
 import Image from 'next/image';
 import Link from 'next/link';

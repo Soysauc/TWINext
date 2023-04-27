@@ -1,9 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import * as React from 'react';
 import Layout from './components/layout';
-// import SEOHead from "../components/head"
-// import { Button } from "../components/ui"
-// import Box from "@mui/material/Box"
+
 import Image from 'next/image';
 
 import ReactPlayer from 'react-player';
@@ -35,7 +33,7 @@ export default function Education() {
             <div>
               <h3>3 hours of video content + 6 live weekly sessions</h3>
             </div>
-            <p> Here's what you'll get:</p>
+            <p> Here&#39s what you&#39ll get:</p>
             <p>
               •{' '}
               <span style={{ fontWeight: '700' }}>
@@ -270,7 +268,7 @@ export default function Education() {
             </div>
             <div className='quote2'>
               <p className='quote'>
-                "My CPA that works for me doesn't know 90% of the<br></br>
+                "My CPA that works for me doesn&#39t know 90% of the<br></br>
                 tax strategies &#x5b;Heath&#93; is talking about"
               </p>
               <p className='author'>
@@ -281,7 +279,7 @@ export default function Education() {
             <div className='quote3'>
               <p className='quote'>
                 "The value that &#x5b;Heath&#93; can provide to a financial{' '}
-                <br></br> advisor...I haven't seen it anywhere else."
+                <br></br> advisor...I haven&#39t seen it anywhere else."
               </p>
               <p className='author'>
                 {' '}

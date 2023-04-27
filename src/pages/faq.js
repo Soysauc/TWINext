@@ -2,8 +2,6 @@
 import * as React from 'react';
 import Layout from './components/layout';
 import Link from 'next/link';
-// import SEOHead from '../components/head';
-// import { Button } from '../components/ui';
 
 const faqs = [
   {

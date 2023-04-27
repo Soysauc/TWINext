@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Layout from './components/layout';
-import MyApp from './_app';
-// import SEOHead from "../components/head";
 export default function ContactUs() {
   return (
     <Layout>

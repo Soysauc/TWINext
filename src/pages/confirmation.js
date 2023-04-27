@@ -1,11 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
 import * as React from 'react';
 import Layout from './components/layout';
-// import SEOHead from "../components/head"
 import Button from './components/ui.css';
-// import Box from "@mui/material/Box"
 import ReactPlayer from 'react-player';
-// import { StaticImage } from "gatsby-plugin-image"
 
 export default function Confirmation() {
   return (
@@ -251,7 +247,7 @@ export default function Confirmation() {
                 }}
               >
                 {' '}
-                We're always here to help.
+                We&#39re always here to help.
               </p>{' '}
               <Button
                 className='roundtable-signup-new'
