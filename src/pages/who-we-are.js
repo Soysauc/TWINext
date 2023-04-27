@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './components/layout';
-// import { Button } from "../components/ui.js"
+import Button from './components/ui.css';
 import Image from 'next/image';
 // import SEOHead from "../components/head"
 
@@ -682,7 +682,7 @@ export default function WhoWeAre() {
           >
             One of us will get back to your shortly
           </h3>
-          {/* <Button
+          <Button
             className='wwd-contact-button wwa'
             to='/contact-us'
             style={{
@@ -694,7 +694,7 @@ export default function WhoWeAre() {
             <a style={{ textDecoration: 'none' }} href={`/contact-us`}>
               Get in touch
             </a>
-          </Button> */}
+          </Button>
         </div>
         <svg
           className='hide-on-mobile'

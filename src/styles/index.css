@@ -1,5 +1,5 @@
 * {
-  font-family: "Gilroy", "open-sans";
+  font-family: 'Gilroy', 'open-sans';
 }
 
 div.millionaire.index-bottom-div {
@@ -70,7 +70,18 @@ iframe.home-form {
 .desktop {
   display: flex !important;
 }
-
+.schedule-now {
+  font-size: 25px;
+  color: white;
+  border: none;
+  background-color: #072ac6;
+  font-weight: 500;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 100px;
+}
 .schedule-now:hover {
   background-color: #3355e9;
 }

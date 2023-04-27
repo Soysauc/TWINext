@@ -113,6 +113,21 @@
 .wwd-footer-div {
   height: 720px;
 }
+.wwd-contact-button {
+  font-size: 25px;
+  color: white;
+  border: none;
+  background-color: #072ac6;
+  font-weight: 500;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 100px;
+}
+.wwd-contact-button:hover {
+  opacity: 0.7;
+}
 
 .wwd__point-title {
   width: fit-content;

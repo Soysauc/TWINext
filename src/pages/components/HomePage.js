@@ -34,9 +34,12 @@ export default function Homepage({ data }) {
             style={{ fill: '#FBC300', height: '494px', width: '494px' }}
           />
         </svg>
-        {/* <div className="index-ellipse-mobile">
-      <img src="https://walterstaxstrategies.com/wp-content/uploads/2022/12/Ellipse-5-1.png" alt="index-ellipse-1" />
-    </div> */}
+        {/* <div className='index-ellipse-mobile'>
+          <img
+            src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/Ellipse-5-1.png'
+            alt='index-ellipse-1'
+          />
+        </div> */}
         <div
           className='carousel-container'
           style={{ display: 'flex', flexDirection: 'row' }}
@@ -61,14 +64,6 @@ export default function Homepage({ data }) {
             <Button
               to='https://calendly.com/d/dvj-7hw-fd9/intro-virtual-meeting-with-the-walters-institute'
               className='schedule-now'
-              style={{
-                fontSize: '25px',
-                fontWeight: '500',
-                paddingLeft: '50px',
-                paddingRight: '50px',
-                paddingTop: '25px',
-                paddingBottom: '25px',
-              }}
             >
               Schedule a call
             </Button>
