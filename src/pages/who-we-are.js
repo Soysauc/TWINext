@@ -1,7 +1,9 @@
 import React from 'react';
 import Layout from './components/layout';
 import Button from './components/ui.css';
+
 import Image from 'next/image';
+import Link from 'next/link';
 // import SEOHead from "../components/head"
 
 export default function WhoWeAre() {
@@ -682,19 +684,18 @@ export default function WhoWeAre() {
           >
             One of us will get back to your shortly
           </h3>
-          <Button
+          <Link
             className='wwd-contact-button wwa'
-            to='/contact-us'
+            href='/contact-us'
             style={{
               backgroundColor: 'white',
               color: '#072AC6',
               fontSize: '20px',
+              textDecoration: 'none',
             }}
           >
-            <a style={{ textDecoration: 'none' }} href={`/contact-us`}>
-              Get in touch
-            </a>
-          </Button>
+            Get in touch
+          </Link>
         </div>
         <svg
           className='hide-on-mobile'

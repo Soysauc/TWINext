@@ -150,7 +150,7 @@ const data = {
     {
       id: 2,
       navItemType: 'Link',
-      href: '/pricing-structure',
+      href: '/pricing',
       text: 'Pricing',
     },
     {

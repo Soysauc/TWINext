@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import Layout from './components/layout';
 import Checkmark from './components/checkmark';
-// import { Button } from '../components/ui.js';
+import Button from './components/ui.css';
+import Link from 'next/link';
 // import { useMediaQuery } from 'react-responsive';
 // import SEOHead from '../components/head';
 
@@ -141,20 +142,25 @@ export default function PricingStructure() {
                     justifyContent: 'center',
                   }}
                 >
-                  {/* <Button
+                  <Link
                     className='signup-button'
-                    to='/education'
+                    href='/education'
                     style={{
                       backgroundColor: '#072AC6',
+                      display: 'flex',
+                      height: '50px',
                       color: '#FFFFFF',
                       fontSize: '20px',
-                      paddingLeft: '90px',
-                      paddingRight: '90px',
-                      textAlign: 'center',
+                      paddingLeft: '60px',
+                      paddingRight: '60px',
+                      borderRadius: '100px',
+                      justifyContent: 'space-around',
+                      flexDirection: 'column',
+                      textDecoration: 'none',
                     }}
                   >
                     Learn more
-                  </Button> */}
+                  </Link>
                 </div>
 
                 <div
@@ -299,19 +305,25 @@ export default function PricingStructure() {
                     justifyContent: 'center',
                   }}
                 >
-                  {/* <Button
+                  <Link
                     className='signup-button'
-                    to='https://calendly.com/d/dvj-7hw-fd9/intro-virtual-meeting-with-the-walters-institute'
+                    href='https://calendly.com/d/dvj-7hw-fd9/intro-virtual-meeting-with-the-walters-institute'
                     style={{
                       backgroundColor: '#072AC6',
+                      display: 'flex',
+                      height: '50px',
                       color: '#FFFFFF',
                       fontSize: '20px',
                       paddingLeft: '60px',
                       paddingRight: '60px',
+                      borderRadius: '100px',
+                      justifyContent: 'space-around',
+                      flexDirection: 'column',
+                      textDecoration: 'none',
                     }}
                   >
                     Schedule a call
-                  </Button> */}
+                  </Link>
                 </div>
                 <div
                   style={{
@@ -445,19 +457,25 @@ export default function PricingStructure() {
                     justifyContent: 'center',
                   }}
                 >
-                  {/* <Button
+                  <Link
                     className='signup-button'
-                    to='https://calendly.com/d/dvj-7hw-fd9/intro-virtual-meeting-with-the-walters-institute'
+                    href='https://calendly.com/d/dvj-7hw-fd9/intro-virtual-meeting-with-the-walters-institute'
                     style={{
                       backgroundColor: '#072AC6',
+                      display: 'flex',
+                      height: '50px',
                       color: '#FFFFFF',
                       fontSize: '20px',
                       paddingLeft: '60px',
                       paddingRight: '60px',
+                      borderRadius: '100px',
+                      justifyContent: 'space-around',
+                      flexDirection: 'column',
+                      textDecoration: 'none',
                     }}
                   >
                     Schedule a call
-                  </Button> */}
+                  </Link>
                 </div>
                 <div
                   style={{
@@ -664,16 +682,18 @@ export default function PricingStructure() {
           >
             We’re pretty nice to talk to.
           </h3>
-          {/* <Button
-            to='/contact-us'
+          <Link
+            className='wwd-contact-button'
+            href='/contact-us'
             style={{
               backgroundColor: 'white',
+              textDecoration: 'none',
               color: '#072AC6',
               fontSize: '25px',
             }}
           >
             Get in touch
-          </Button> */}
+          </Link>
         </div>
       </div>
     </Layout>

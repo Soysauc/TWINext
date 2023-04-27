@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from './components/layout';
+import Link from 'next/link';
 import Image from 'next/image';
-// import { Button } from "../components/ui.js"
+import Button from './components/ui.css';
 // import SEOHead from "../components/head"
 
 export default function WhatWeDo() {
@@ -20,8 +21,8 @@ export default function WhatWeDo() {
             <Image
               className='wwd-carousel-image'
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/12/Group-of-People-1-copy.png'
-              width={1000}
-              height={750}
+              width={800}
+              height={850}
               alt='people'
             />
           </div>
@@ -192,17 +193,18 @@ export default function WhatWeDo() {
             >
               We&#39;re always happy to chat.
             </h3>
-            {/* <Button
-            className='wwd-contact-button'
-            to='/contact-us'
-            style={{
-              backgroundColor: 'white',
-              color: '#072AC6',
-              fontSize: '25px',
-            }}
-          >
-            Get in touch
-          </Button> */}
+            <Link
+              className='wwd-contact-button'
+              href='/contact-us'
+              style={{
+                backgroundColor: 'white',
+                color: '#072AC6',
+                fontSize: '25px',
+                textDecoration: 'none',
+              }}
+            >
+              Get in touch
+            </Link>
           </div>
           <svg
             className='hide-on-mobile'

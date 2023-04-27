@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import * as React from 'react';
 import Layout from './components/layout';
+import Link from 'next/link';
 // import SEOHead from '../components/head';
 // import { Button } from '../components/ui';
 
@@ -333,17 +334,19 @@ export default function WhoWeAre() {
             >
               Drop us a line.
             </h3>
-            {/* <Button
-              to='/contact-us'
+            <Link
+              className='wwd-contact-button'
+              href='/contact-us'
               style={{
                 backgroundColor: 'white',
                 color: '#072AC6',
                 fontSize: '25px',
                 fontWeight: '600',
+                textDecoration: 'none',
               }}
             >
               Get in touch
-            </Button> */}
+            </Link>
           </div>
         </div>
       </div>
