@@ -2,6 +2,11 @@
   color: white;
   text-align: center;
 }
+.limited-time-only {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
 
 .education-wrapper h1 {
   font-size: 45px;
@@ -136,33 +141,49 @@
 }
 
 .education-sessions h5 {
-  font-size: 28px !important;
+  font-size: 23px !important;
   margin-top: 0px;
 }
 
 .education-sessions p {
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
   margin-top: 0px;
-  font-size: 22px !important;
+  font-size: 20px !important;
+}
+
+.education-session1 {
+  width: 520px;
+}
+
+.education-session2 {
+  align-self: flex-end;
+  width: 520px;
+  margin-right: 18% !important;
+  margin-top: -60px;
+}
+
+.education-session3 {
+  width: 520px;
 }
 
 .topics-grid {
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: auto;
-  margin-right: auto;
-  grid-gap: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: -100px;
+  margin-left: 18%;
+  margin-bottom: 100px !important;
 }
 
 .topics {
   background-image: url('https://walterstaxstrategies.com/wp-content/uploads/2023/01/Vector-36.png');
-  background-size: cover;
-  /* padding-bottom: 150px; */
-  margin-top: 150px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
 
 .edu-closing-div h2 {
@@ -440,8 +461,58 @@
     font-size: 25px;
   }
 }
-
+@media only screen and (max-width: 1500px) {
+  .education-session2 {
+    margin-right: 9% !important;
+  }
+}
 @media only screen and (max-width: 860px) {
+  .bottom-register-button-wrapper {
+    margin-top: 15px !important;
+  }
+  .education-session1 {
+    width: 390px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .education-session2 {
+    align-self: flex-start;
+    width: 390px;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: 9% !important;
+  }
+  .education-session3 {
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .right-column {
+    margin-right: -130px;
+  }
+
+  .bottom-register-button,
+  .bottom-register-button2 {
+    font-size: 20px !important;
+  }
+
+  .left-column h3 {
+    font-size: 21px !important;
+  }
+
+  .bottom-register-button-wrapper {
+    margin: 10px auto 30px !important;
+  }
+
+  .what-others-are-saying {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .topics-grid {
+    margin-left: 0 !important;
+  }
   .bottom-register-button-wrapper {
     margin-top: 15px !important;
   }
@@ -766,5 +837,29 @@
   .what-others-are-saying {
     margin-right: 5%;
     margin-left: 5%;
+  }
+  .limited-time-only img {
+    width: 240px !important;
+    margin: 0 auto;
+  }
+  .topics-grid {
+    margin-left: 0 !important;
+  }
+
+  .education-session1 {
+    width: 85vw !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .education-session2 {
+    align-self: flex-start;
+    width: 85vw !important;
+    margin-top: -10px;
+    margin-right: 5% !important;
+  }
+  .education-session3 {
+    width: 85vw !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import * as React from 'react';
 import Layout from './components/layout';
+import Link from 'next/link';
 
 import Image from 'next/image';
 
@@ -26,43 +27,73 @@ export default function Education() {
               url='https://player.vimeo.com/video/787077938?h=1cbe16e450&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
             />
           </div>
+
+          <div className='limited-time-only'>
+            <img
+              className='limited-time-only-image'
+              style={{
+                width: '400px',
+                height: 'auto',
+                marginTop: 'auto',
+                marginBottom: '-55px',
+              }}
+              src='https://walterstaxstrategies.com/wp-content/uploads/2023/04/LTO.png'
+            />
+          </div>
+
           <div className='roundtable-info'>
             <h1 style={{ color: 'white' }}>
-              The 2023 Tax Strategy Masterclass
+              The 2023 HNW Prospecting Masterclass
             </h1>
             <div>
-              <h3>3 hours of video content + 6 live weekly sessions</h3>
+              <h3>6 hours of video content + 3 live weekly sessions</h3>
             </div>
-            <p> Here&#39s what you&#39ll get:</p>
+            <p> By the end of this masterclass you'll be able to:</p>
+
+            <p>
+              • Deliver{' '}
+              <span style={{ fontWeight: '700' }}>ten powerful strategies</span>{' '}
+              that help you solve wealthy clients' biggest tax issues
+            </p>
+
             <p>
               •{' '}
               <span style={{ fontWeight: '700' }}>
-                Twelve powerful strategies
+                Identify at least three HNW prospects
               </span>{' '}
-              that can reduce HNW tax liabilities an average of 48%
+              in your circle who can benefit from the strategies and get a
+              meeting booked with each of them
             </p>
+
             <p>
-              • The <span style={{ fontWeight: '700' }}>five experts</span> you
-              need on your team to execute efficiently and effectively
+              •{' '}
+              <span style={{ fontWeight: '700' }}>
+                Understand the five resources
+              </span>{' '}
+              you need on your team to execute efficiently and effectively
             </p>
+
             <p>
-              • The secret to{' '}
-              <span style={{ fontWeight: '700' }}>attracting and closing</span>{' '}
-              wealthy prospects with an{' '}
-              <span style={{ fontWeight: '700' }}>80%+ success rate</span> by
-              proactively addressing their tax planning concerns
+              •{' '}
+              <span style={{ fontWeight: '700' }}>
+                Deploy four proven marketing programs
+              </span>{' '}
+              that consistently attract affluent prospects
             </p>
+
             <p>
-              • <span style={{ fontWeight: '700' }}>Lifetime access</span> to
-              live session recordings
+              • <span style={{ fontWeight: '700' }}>Have lifetime access</span>{' '}
+              to live session recordings
             </p>
           </div>
 
           <div className='signup-sheet' id='signup-sheet'>
             <div className='choose-your-start-date' id='choose-your-start-date'>
-              <p>• Choose your start date •</p>
+              <p>• Register Now •</p>
             </div>
-            {/* <Box
+
+            <div className='signup-sheet' id='signup-sheet'>
+              {/* <Box
               sx={{
                 maxWidth: 300,
                 margin: "auto",
@@ -71,23 +102,23 @@ export default function Education() {
               }}
             ></Box> */}
 
-            {
               {
-                '': (
-                  <div>
-                    <div
-                      className='bottom-register-button-wrapper'
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        width: '90%',
-                        margin: 'auto',
-                        marginTop: '40px',
-                        marginBottom: '30px',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      {/* <Button
+                {
+                  '': (
+                    <div>
+                      <div
+                        className='bottom-register-button-wrapper'
+                        style={{
+                          display: 'flex',
+                          flexDirection: 'row',
+                          width: '90%',
+                          margin: 'auto',
+                          marginTop: '40px',
+                          marginBottom: '30px',
+                          justifyContent: 'center',
+                        }}
+                      >
+                        {/* <Button
                         className="roundtable-signup"
                         to="https://buy.stripe.com/5kA5nY96ogy6fRKbJa?prefilled_promo_code=MC500Promo"
                         style={{
@@ -101,21 +132,21 @@ export default function Education() {
                       >
                         Tuesday, March 21 @ 11:00am EST
                       </Button> */}
-                    </div>
+                      </div>
 
-                    <div
-                      className='bottom-register-button-wrapper'
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        width: '90%',
-                        margin: 'auto',
-                        marginTop: '40px',
-                        marginBottom: '30px',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      {/* <Button
+                      <div
+                        className='bottom-register-button-wrapper'
+                        style={{
+                          display: 'flex',
+                          flexDirection: 'row',
+                          width: '90%',
+                          margin: 'auto',
+                          marginTop: '40px',
+                          marginBottom: '30px',
+                          justifyContent: 'center',
+                        }}
+                      >
+                        {/* <Button
                         className='roundtable-signup2'
                         to='#roundtable-signup'
                         style={{
@@ -131,20 +162,20 @@ export default function Education() {
                       >
                         Wednesday, April 5 @ 9:30am EST
                       </Button> */}
-                    </div>
-                    <div
-                      className='bottom-register-button-wrapper'
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        width: '90%',
-                        margin: 'auto',
-                        marginTop: '40px',
-                        marginBottom: '30px',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      {/* <Button
+                      </div>
+                      <div
+                        className='bottom-register-button-wrapper'
+                        style={{
+                          display: 'flex',
+                          flexDirection: 'row',
+                          width: '90%',
+                          margin: 'auto',
+                          marginTop: '40px',
+                          marginBottom: '30px',
+                          justifyContent: 'center',
+                        }}
+                      >
+                        {/* <Button
                         className="roundtable-signup3"
                         to="#roundtable-signup"
                         style={{
@@ -160,7 +191,40 @@ export default function Education() {
                       >
                         Wednesday, April 26 @ 11:00am EST
                       </Button> */}
+                      </div>
+                      <div
+                        className='bottom-register-button-wrapper'
+                        style={{
+                          display: 'flex',
+                          flexDirection: 'row',
+                          width: '90%',
+                          margin: 'auto',
+                          marginTop: '40px',
+                          marginBottom: '30px',
+                          justifyContent: 'center',
+                        }}
+                      >
+                        <Link
+                          className='roundtable-signup'
+                          href='https://buy.stripe.com/fZedUufuMdlU6hafZz'
+                          style={{
+                            backgroundColor: '#072AC6',
+                            color: '#FFFFFF',
+                            fontSize: '25px',
+                            fontWeight: '500',
+                            paddingLeft: '50px',
+                            paddingRight: '50px',
+                            paddingTop: '25px',
+                            paddingBottom: '25px',
+                            borderRadius: '100px',
+                          }}
+                        >
+                          Tuesday, May 9 @ 11:00am EST
+                        </Link>
+                      </div>
                     </div>
+                  ),
+                  'Round Table #2 February 15th 11am': (
                     <div
                       className='bottom-register-button-wrapper'
                       style={{
@@ -169,43 +233,11 @@ export default function Education() {
                         width: '90%',
                         margin: 'auto',
                         marginTop: '40px',
-                        marginBottom: '30px',
+                        marginBottom: '50px',
                         justifyContent: 'center',
                       }}
                     >
                       {/* <Button
-                        className='roundtable-signup4'
-                        to='#roundtable-signup'
-                        style={{
-                          backgroundColor: '#072AC6',
-                          color: '#FFFFFF',
-                          fontSize: '25px',
-                          fontWeight: '500',
-                          paddingLeft: '50px',
-                          paddingRight: '50px',
-                          paddingTop: '25px',
-                          paddingBottom: '25px',
-                        }}
-                      >
-                        Tuesday, May 2 @ 9:30am EST
-                      </Button> */}
-                    </div>
-                  </div>
-                ),
-                'Round Table #2 February 15th 11am': (
-                  <div
-                    className='bottom-register-button-wrapper'
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'row',
-                      width: '90%',
-                      margin: 'auto',
-                      marginTop: '40px',
-                      marginBottom: '50px',
-                      justifyContent: 'center',
-                    }}
-                  >
-                    {/* <Button
                       className='roundtable-signup'
                       to='https://checkout.stripe.com/c/pay/cs_live_b1xsaPdF9Z2tQeYQkjDxFhEuJHTvLP3ltB8stwdTviSD2tMIHZ28vNTRSG#fidkdWxOYHwnPyd1blppbHNgWjA0SUkwU0ZPbkhuZEoxVEhdaWBDYTFxQm5pbFZ8RH9cXFBDYkxnYTFvTGAxMGNzaDRmaVVpakE8YmZKUmt%2FU0hSYzRucnNGYjRVZ31WNFNQN052TDZAZ39nNTU0Y0lXMk9XYycpJ3VpbGtuQH11anZgYUxhJz8nNz1qM3Y3ZGR2MFF2MmlgPERVJ3gl'
                       style={{
@@ -219,22 +251,22 @@ export default function Education() {
                     >
                       Register now
                     </Button> */}
-                  </div>
-                ),
-                'Round Table #3 February 28th 9:30am': (
-                  <div
-                    className='bottom-register-button-wrapper'
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'row',
-                      width: '90%',
-                      margin: 'auto',
-                      marginTop: '40px',
-                      marginBottom: '50px',
-                      justifyContent: 'center',
-                    }}
-                  >
-                    {/* <Button
+                    </div>
+                  ),
+                  'Round Table #3 February 28th 9:30am': (
+                    <div
+                      className='bottom-register-button-wrapper'
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        width: '90%',
+                        margin: 'auto',
+                        marginTop: '40px',
+                        marginBottom: '50px',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      {/* <Button
                       className='roundtable-signup'
                       to='https://checkout.stripe.com/c/pay/cs_live_b1z3MpUK5tw2KGQcUJadxA8PSDsSy8Sj9RPD84jRVm8M5YrKzHDgkc5fQE#fidkdWxOYHwnPyd1blppbHNgWjA0SUkwU0ZPbkhuZEoxVEhdaWBDYTFxQm5pbFZ8RH9cXFBDYkxnYTFvTGAxMGNzaDRmaVVpakE8YmZKUmt%2FU0hSYzRucnNGYjRVZ31WNFNQN052TDZAZ39nNTU0Y0lXMk9XYycpJ3VpbGtuQH11anZgYUxhJz8nNmZ2N2dIYnxUN01iYlNKNDFxJ3gl'
                       style={{
@@ -248,12 +280,10 @@ export default function Education() {
                     >
                       Register now
                     </Button> */}
-                  </div>
-                ),
-              }[rtdate]
-            }
-            <div class='available-for-purchase'>
-              <p>April and May classes will be available for purchase soon!</p>
+                    </div>
+                  ),
+                }[rtdate]
+              }
             </div>
           </div>
 
@@ -345,48 +375,31 @@ export default function Education() {
             </div>
           </div>
           <div className='topics'>
-            <h1 style={{ color: 'black' }}>The Topics</h1>
+            <h1 style={{ color: 'black', marginTop: '100px' }}>The Topics</h1>
             <div className='topics-grid'>
-              <div className='education-sessions'>
+              <div className='education-sessions education-session1'>
                 <h3>Week 1</h3>
-                <h5>Intro to Tax Planning & the Family Office Model</h5>
-                <p>• What HNW clients expect from their financial advisor</p>
-                <p>• The five people you need on your team</p>
-                <p>• The power of depreciation and cost segregation</p>
+                <h5>Estate Planning/ Tax Efficient Investing</h5>
+                <p>• Why Section 706 portability is important</p>
+                <p>• How IRAs for beneficiaries can change a client's life </p>
+                <p>• The power of tax loss harvesting</p>
+                <p>• Mitigating dividend-related liabilities</p>
+                <p>• The tax efficiencies of options contracts</p>
               </div>
-              <div className='education-sessions'>
+              <div className='education-sessions education-session2' style={{}}>
                 <h3>Week 2</h3>
-                <h5>Opportunity Zones & 1031 Exchanges</h5>
+                <h5>Capital Gains Planning</h5>
                 <p>• Tapping into passive and active mechanisms</p>
                 <p>• How to leverage Delaware Statutory Trusts</p>
                 <p>• The importance of Qualified Intermediaries</p>
+                <p>• Maximizing the potential of Deferred Sales Trusts</p>
               </div>
-              <div className='education-sessions'>
+              <div className='education-sessions education-session3'>
                 <h3>Week 3</h3>
-                <h5>Charitable Planning</h5>
+                <h5>Business Owner Planning</h5>
+                <p>• The one-two punch of captive insurance</p>
                 <p>• How Defined Benefit Plans improve retirement</p>
-                <p>• Why Donor Advised Funds are a powerful tool</p>
-                <p>• How Defined Benefit Plans improve retirement</p>
-              </div>
-              <div className='education-sessions'>
-                <h3>Week 4</h3>
-                <h5>Tax Efficient Investing</h5>
-                <p>• What HNW clients expect from their financial advisor</p>
-                <p>• The five people you need on your team</p>
-                <p>• The power of depreciation and cost segregation</p>
-              </div>
-              <div className='education-sessions'>
-                <h3>Week 5</h3>
-                <h5>Estate Planning</h5>
-                <p>• Why Section 706 portability is important</p>
-                <p>• How to leverage Deferred Sales Trusts</p>
-              </div>
-              <div className='education-sessions'>
-                <h3>Week 6</h3>
-                <h5>Putting It All Together</h5>
-                <p>• How to expand your team with the right skill sets</p>
-                <p>• The most effective marketing for the HNW demographic</p>
-                <p>• Becoming hyper-referable in your COI</p>
+                <p>• The role of private placement life insurance</p>
               </div>
             </div>
           </div>
@@ -423,9 +436,12 @@ export default function Education() {
                   Seats are limited to 10 per course, so reserve your spot
                   today!
                 </p>
-                {/* <div className= "choose-your-start-date2" id ="choose-your-start-date2">
-          <p>• Choose your start date •</p>
-        </div> */}
+                <div
+                  className='choose-your-start-date2'
+                  id='choose-your-start-date2'
+                >
+                  <p>• Choose your start date •</p>
+                </div>
                 <div className='signup-wrapper'>
                   {/* <Box
                     sx={{
@@ -451,9 +467,36 @@ export default function Education() {
                           >
                             {/* <Button className="bottom-register-button" to="https://buy.stripe.com/28o6s2aas5Ts7le9AP" style={{backgroundColor: "#072AC6", color: "#FFFFFF", fontSize: "25px", fontWeight: "500", paddingLeft: "20px", paddingRight: "20px", paddingTop: "20px", paddingBottom:"25px" }}>Wednesday, Feb. 15 @ 11:00am EST</Button> */}
                           </div>
-                          {/* <div className="bottom-register-button-wrapper" style={{display: "flex", flexDirection: "row", width: "90%", margin: "auto", marginTop: "40px", marginBottom: "50px", justifyContent: "center"}}>
-                                                                            <Button className="bottom-register-button2" to="https://buy.stripe.com/3cs2bMgyQ2HggVO14t?prefilled_promo_code=MC500Promo" style={{backgroundColor: "#072AC6", color: "#FFFFFF", fontSize: "25px", fontWeight: "500", paddingLeft: "40px", paddingRight: "40px", paddingTop: "20px", paddingBottom:"25px"}}>Tuesday, Feb. 28 @ 9:30am EST</Button>
-                                                                          </div>  */}
+                          <div
+                            className='bottom-register-button-wrapper'
+                            style={{
+                              display: 'flex',
+                              flexDirection: 'row',
+                              width: '90%',
+                              margin: 'auto',
+                              marginTop: '40px',
+                              marginBottom: '50px',
+                              justifyContent: 'center',
+                            }}
+                          >
+                            <Link
+                              className='bottom-register-button2'
+                              href='https://buy.stripe.com/3cs2bMgyQ2HggVO14t?prefilled_promo_code=MC500Promo'
+                              style={{
+                                backgroundColor: '#072AC6',
+                                color: '#FFFFFF',
+                                fontSize: '25px',
+                                fontWeight: '500',
+                                paddingLeft: '40px',
+                                paddingRight: '40px',
+                                paddingTop: '20px',
+                                paddingBottom: '25px',
+                                borderRadius: '100px',
+                              }}
+                            >
+                              Tuesday, May. 9 @ 11:00am EST
+                            </Link>
+                          </div>
                         </div>
                       ),
                       'Round Table #2 February 15th 11am': (
