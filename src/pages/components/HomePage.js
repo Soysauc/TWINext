@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Layout from '../components/layout';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 export default function Homepage({ data }) {
   const [open, setOpen] = React.useState(true);
@@ -67,10 +68,13 @@ export default function Homepage({ data }) {
             className='image-container'
             style={{ width: '100vw', display: 'flex', justifyContent: 'end' }}
           >
-            <img
+            <Image
               className='carousel-image'
               src='https://walterstaxstrategies.com/wp-content/uploads/2022/11/57cdd9a3decd506fc4f4c5d02a3c3ddf.png'
               alt='financial-advisors-sitting'
+              height={1000}
+              width={774}
+              // style={{ marginBottom: '0' }}
             />
           </div>
         </div>
@@ -94,7 +98,6 @@ export default function Homepage({ data }) {
             style={{ fill: '#FBC300', height: '494px', width: '494px' }}
           />
         </svg>
-        <h1>Where am i</h1>
         <div
           className='forbes-banner'
           style={{ backgroundColor: '#FFF3CA', height: '216px' }}
@@ -135,7 +138,6 @@ export default function Homepage({ data }) {
             />
           </a>
         </div>
-
         <div
           style={{
             background: '#072AC6',

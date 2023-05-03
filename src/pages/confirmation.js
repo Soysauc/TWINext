@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Layout from './components/layout';
-import Button from './components/ui.css';
 import ReactPlayer from 'react-player';
+import Link from 'next/link';
 
 export default function Confirmation() {
   return (
@@ -249,7 +249,7 @@ export default function Confirmation() {
                 {' '}
                 We&#39re always here to help.
               </p>{' '}
-              <Button
+              <Link
                 className='roundtable-signup-new'
                 to='/contact-us'
                 style={{
@@ -268,7 +268,7 @@ export default function Confirmation() {
               >
                 {' '}
                 Get in touch
-              </Button>
+              </Link>
             </div>
           </div>
         </div>

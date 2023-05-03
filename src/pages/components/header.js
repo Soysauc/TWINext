@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { XIcon, HamburgerIcon } from './Symbols';
 
 import BrandLogo from './brand-logo';
 
@@ -185,6 +186,10 @@ export default function Header() {
     setIsMounted(true);
   }, []);
 
+  const toggleOpen = () => {
+    setOpen(!isOpen);
+  };
+
   return (
     <header style={{ position: 'relative', zIndex: '9999' }}>
       <div
@@ -290,6 +295,7 @@ export default function Header() {
           </Div>
         </Flex>
       </Container>
+
       {isMounted && isOpen && (
         <div className={mobileNavOverlay}>
           <nav>
