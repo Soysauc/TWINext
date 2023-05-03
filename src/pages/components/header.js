@@ -1,31 +1,10 @@
 import React, { useState } from 'react';
-// import { XIcon, HamburgerIcon } from './Symbols';
-// import { button, buttons } from './ui.css';
-// import Button from './ui.css';
-
-function MyButton({ variant, children }) {
-  return <button className={buttons[variant]}>{children}</button>;
-}
 
 import BrandLogo from './brand-logo';
 
 const desktopHeaderNavWrapper = 'desktop-header-nav-wrapper';
-// const mobileHeaderNavWrapper = {
-//   open: 'mobile-header-nav-wrapper open',
-//   closed: 'mobile-header-nav-wrapper closed',
-// };
-const mobileHeaderNavWrapper = {
-  open: 'mobile-header-nav-wrapper open',
-  closed: 'mobile-header-nav-wrapper closed',
-  closedStyle: { display: 'none' },
-};
-
 const mobileNavOverlay = 'mobile-nav-overlay';
 const mobileNavLink = 'mobile-nav-link';
-const mobileNavSVGColorWrapper = {
-  primary: 'mobile-nav-svg-color-wrapper primary',
-  reversed: 'mobile-nav-svg-color-wrapper reversed',
-};
 const ctaButton = 'cta-button';
 
 function Container({ className, children }) {
@@ -99,18 +78,6 @@ function Button({ to, children, ...props }) {
       </a>
     </div>
   );
-}
-
-function InteractiveIcon({ title, onClick, children, ...props }) {
-  return (
-    <button type='button' title={title} onClick={onClick} {...props}>
-      {children}
-    </button>
-  );
-}
-
-function Nudge({ right, children }) {
-  return <div style={{ marginRight: right }}>{children}</div>;
 }
 
 function VisuallyHidden({ children }) {
@@ -212,29 +179,11 @@ export default function Header() {
   const { navItems, cta } = data;
   const [isOpen, setOpen] = useState(false);
   const [hoveredDropdown, setHoveredDropdown] = useState(null);
-
-  // const [dropdownVisibility, setDropdownVisibility] = useState({});
-
-  // const handleMouseEnter = (id) => {
-  //   setDropdownVisibility({ ...dropdownVisibility, [id]: true });
-  // };
-
-  // const handleMouseLeave = (id) => {
-  //   setDropdownVisibility({ ...dropdownVisibility, [id]: false });
-  // };
   const [isMounted, setIsMounted] = React.useState(false);
 
   React.useEffect(() => {
     setIsMounted(true);
   }, []);
-
-  // React.useEffect(() => {
-  //   if (isOpen) {
-  //     document.body.style.overflowY = 'hidden';
-  //   } else {
-  //     document.body.style.overflowY = 'visible';
-  //   }
-  // }, [isOpen]);
 
   return (
     <header style={{ position: 'relative', zIndex: '9999' }}>
@@ -341,40 +290,6 @@ export default function Header() {
           </Div>
         </Flex>
       </Container>
-      {/* <Container
-        className={mobileHeaderNavWrapper[isOpen ? 'open' : 'closed']}
-        style={isOpen ? null : mobileHeaderNavWrapper.closedStyle}
-      >
-        {' '}
-        <Space size={2} />
-        <Flex variant='spaceBetween'>
-          <span
-            className={
-              mobileNavSVGColorWrapper[isOpen ? 'reversed' : 'primary']
-            }
-          >
-            <NavLink to=''>
-              <VisuallyHidden>Home</VisuallyHidden>
-              <BrandLogo />
-            </NavLink>
-          </span>
-          <Flex>
-            <Space />
-
-            <Nudge right={3}>
-              <InteractiveIcon
-                title='Toggle menu'
-                onClick={() => setOpen(!isOpen)}
-                className={
-                  mobileNavSVGColorWrapper[isOpen ? 'reversed' : 'primary']
-                }
-              >
-                {isOpen ? <XIcon /> : <HamburgerIcon />}
-              </InteractiveIcon>
-            </Nudge>
-          </Flex>
-        </Flex>
-      </Container> */}
       {isMounted && isOpen && (
         <div className={mobileNavOverlay}>
           <nav>
