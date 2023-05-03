@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { XIcon, HamburgerIcon } from './Symbols';
+// import { XIcon, HamburgerIcon } from './Symbols';
+import MobileHeader from './MobileHeader';
 
 import BrandLogo from './brand-logo';
 
@@ -216,6 +217,12 @@ export default function Header() {
         rel='stylesheet'
         href='https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css'
       />
+      <MobileHeader
+        isOpen={isOpen}
+        setOpen={setOpen}
+        navItems={navItems}
+        cta={cta}
+      />
       <Container className={desktopHeaderNavWrapper}>
         <Space size={40} />
         <Flex variant='spaceAround'>
@@ -295,6 +302,7 @@ export default function Header() {
           </Div>
         </Flex>
       </Container>
+      {isMounted && isOpen && <MobileHeader navItems={navItems} cta={cta} />}
 
       {isMounted && isOpen && (
         <div className={mobileNavOverlay}>

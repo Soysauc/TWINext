@@ -39,3 +39,18 @@
 
 @media only screen and (max-width: 700px) {
 }
+
+@media (max-width: 767px) {
+  .desktop-header-nav-wrapper {
+    display: none;
+  }
+  .cta-button {
+    display: none;
+  }
+  header {
+    height: 80px;
+    background-color: #072ac6;
+    position: relative;
+    z-index: 9999;
+  }
+}
