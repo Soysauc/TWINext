@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { XIcon, HamburgerIcon } from './Symbols';
-import { button, buttons } from './ui.css';
+// import { XIcon, HamburgerIcon } from './Symbols';
+// import { button, buttons } from './ui.css';
 // import Button from './ui.css';
 
 function MyButton({ variant, children }) {
