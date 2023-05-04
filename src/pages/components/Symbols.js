@@ -19,28 +19,38 @@ export const XIcon = (props) => {
     </X>
   );
 };
+const HamburgerWrapper = styled.div`
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Hamburger = styled.svg`
   width: 24px;
   height: 24px;
-  fill: red;
+  fill: blue;
   stroke: red;
   stroke-width: 2px;
-  border-radius: 50%;
   stroke-linecap: round;
 `;
 
 const HamburgerLine = styled.line`
   stroke-linecap: round;
-  stroke: #fff;
+  stroke: blue;
 `;
 
 export const HamburgerIcon = (props) => {
   return (
-    <Hamburger viewBox='0 0 24 24' {...props}>
-      <HamburgerLine x1='3' y1='12' x2='21' y2='12' />
-      <HamburgerLine x1='3' y1='6' x2='21' y2='6' />
-      <HamburgerLine x1='3' y1='18' x2='21' y2='18' />
-    </Hamburger>
+    <HamburgerWrapper>
+      <Hamburger viewBox='0 0 24 24' {...props}>
+        <HamburgerLine x1='3' y1='12' x2='21' y2='12' />
+        <HamburgerLine x1='3' y1='6' x2='21' y2='6' />
+        <HamburgerLine x1='3' y1='18' x2='21' y2='18' />
+      </Hamburger>
+    </HamburgerWrapper>
   );
 };

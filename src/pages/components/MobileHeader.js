@@ -1,6 +1,5 @@
 import React from 'react';
-import XIcon from './Symbols';
-import HamburgerIcon from './Symbols';
+import { XIcon, HamburgerIcon } from './Symbols';
 
 function FlexList({ children }) {
   return (
@@ -26,12 +25,16 @@ function NavLink({ to, children, ...props }) {
     </a>
   );
 }
-
 function MobileHeader({ navItems, isOpen, onToggle }) {
   return (
     <header style={{ position: 'relative', zIndex: '9999' }}>
-      <nav style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <button onClick={onToggle}>
+      <nav
+        style={{
+          display: 'flex',
+          justifyContent: 'flex-end', // Change this line
+        }}
+      >
+        <button className='burger' onClick={onToggle}>
           {isOpen ? <XIcon /> : <HamburgerIcon />}
         </button>
       </nav>
@@ -40,11 +43,11 @@ function MobileHeader({ navItems, isOpen, onToggle }) {
           style={{
             position: 'fixed',
             top: '50px',
-            left: 0,
+            left: 'auto',
             right: 0,
             bottom: 0,
             backgroundColor: 'blue',
-            color: 'white',
+            color: 'blue',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
