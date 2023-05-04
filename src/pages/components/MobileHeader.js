@@ -1,7 +1,9 @@
 import React from 'react';
 import { XIcon, HamburgerIcon } from './Symbols';
 import BrandLogo from './brand-logo';
-import styled from 'styled-components';
+
+const mobileNavOverlay = 'mobile-nav-overlay';
+const mobileNavLink = 'mobile-nav-link';
 
 function FlexList({ children }) {
   return (
@@ -13,6 +15,7 @@ function FlexList({ children }) {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
       {children}
@@ -22,15 +25,25 @@ function FlexList({ children }) {
 
 function NavLink({ to, children, ...props }) {
   return (
-    <a href={to} {...props}>
+    <a
+      className='mobile__link'
+      href={to}
+      {...props}
+      style={{
+        textDecoration: 'none',
+        color: 'white',
+        ...props.style,
+        cursor: 'pointer',
+      }}
+    >
       {children}
     </a>
   );
 }
 
-function MobileHeader({ navItems, isOpen, onToggle }) {
+function MobileHeader({ navItems, isOpen, onToggle, cta, className }) {
   return (
-    <div className='mobile-header'>
+    <div className={className}>
       <header
         style={{
           position: 'relative',
@@ -42,10 +55,12 @@ function MobileHeader({ navItems, isOpen, onToggle }) {
         <nav
           style={{
             display: 'flex',
-            justifyContent: 'space-between', // Change this line
+            justifyContent: 'space-between',
           }}
         >
-          <BrandLogo />
+          <NavLink to='/'>
+            <BrandLogo />
+          </NavLink>
           <button className='burger' onClick={onToggle}>
             {isOpen ? <XIcon /> : <HamburgerIcon />}
           </button>
@@ -54,23 +69,45 @@ function MobileHeader({ navItems, isOpen, onToggle }) {
           <div
             style={{
               position: 'fixed',
-              top: '50px',
-              left: 'auto',
+              top: 0,
+              left: 0,
               right: 0,
               bottom: 0,
-              backgroundColor: 'white',
+              backgroundColor: 'blue',
               color: 'white',
               display: 'flex',
               flexDirection: 'column',
+              justifyContent: 'center',
               alignItems: 'center',
             }}
           >
             <FlexList>
               {navItems.map((navItem) => (
-                <li key={navItem.id} style={{ marginBottom: '20px' }}>
+                <li
+                  key={navItem.id}
+                  style={{
+                    marginBottom: '20px',
+                    textDecoration: 'none',
+                    color: 'white',
+                  }}
+                >
                   <NavLink to={navItem.href}>{navItem.text}</NavLink>
                 </li>
               ))}
+              <li key={5}>
+                <NavLink
+                  className={mobileNavLink}
+                  style={{
+                    fontWeight: '400',
+                    color: 'white',
+                    fontSize: '22px',
+                    textDecoration: 'none',
+                  }}
+                  to={`/contact-us`}
+                >
+                  Contact Us
+                </NavLink>
+              </li>
             </FlexList>
           </div>
         )}
