@@ -1,5 +1,7 @@
 import React from 'react';
 import { XIcon, HamburgerIcon } from './Symbols';
+import BrandLogo from './brand-logo';
+import styled from 'styled-components';
 
 function FlexList({ children }) {
   return (
@@ -25,44 +27,55 @@ function NavLink({ to, children, ...props }) {
     </a>
   );
 }
+
 function MobileHeader({ navItems, isOpen, onToggle }) {
   return (
-    <header style={{ position: 'relative', zIndex: '9999' }}>
-      <nav
+    <div className='mobile-header'>
+      <header
         style={{
-          display: 'flex',
-          justifyContent: 'flex-end', // Change this line
+          position: 'relative',
+          zIndex: '9999',
+          background: 'white',
+          paddingTop: '15px',
         }}
       >
-        <button className='burger' onClick={onToggle}>
-          {isOpen ? <XIcon /> : <HamburgerIcon />}
-        </button>
-      </nav>
-      {isOpen && (
-        <div
+        <nav
           style={{
-            position: 'fixed',
-            top: '50px',
-            left: 'auto',
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'blue',
-            color: 'blue',
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+            justifyContent: 'space-between', // Change this line
           }}
         >
-          <FlexList>
-            {navItems.map((navItem) => (
-              <li key={navItem.id} style={{ marginBottom: '20px' }}>
-                <NavLink to={navItem.href}>{navItem.text}</NavLink>
-              </li>
-            ))}
-          </FlexList>
-        </div>
-      )}
-    </header>
+          <BrandLogo />
+          <button className='burger' onClick={onToggle}>
+            {isOpen ? <XIcon /> : <HamburgerIcon />}
+          </button>
+        </nav>
+        {isOpen && (
+          <div
+            style={{
+              position: 'fixed',
+              top: '50px',
+              left: 'auto',
+              right: 0,
+              bottom: 0,
+              backgroundColor: 'white',
+              color: 'white',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
+            <FlexList>
+              {navItems.map((navItem) => (
+                <li key={navItem.id} style={{ marginBottom: '20px' }}>
+                  <NavLink to={navItem.href}>{navItem.text}</NavLink>
+                </li>
+              ))}
+            </FlexList>
+          </div>
+        )}
+      </header>
+    </div>
   );
 }
 
