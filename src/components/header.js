@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import { XIcon, HamburgerIcon } from './Symbols';
 import MobileHeader from './MobileHeader';
+import Forbes from './Forbes';
 
 import BrandLogo from './brand-logo';
 
@@ -141,16 +142,16 @@ const data = {
       text: 'Education',
       children: [
         {
-          id: 6,
-          navItemType: 'Link',
-          href: `http://education.thewaltersinstitute.org`,
-          text: 'Portal',
-        },
-        {
           id: 7,
           navItemType: 'Link',
           href: '/education',
           text: 'MasterClass',
+        },
+        {
+          id: 6,
+          navItemType: 'Link',
+          href: `http://education.thewaltersinstitute.org`,
+          text: 'Portal',
         },
       ],
     },

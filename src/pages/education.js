@@ -2,7 +2,7 @@
 import * as React from 'react';
 import Layout from '@/components/layout';
 import Link from 'next/link';
-
+import Forbes from '@/components/Forbes';
 import Image from 'next/image';
 
 import ReactPlayer from 'react-player';
@@ -27,21 +27,22 @@ export default function Education() {
               url='https://player.vimeo.com/video/787077938?h=1cbe16e450&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
             />
           </div>
-
-          <div className='limited-time-only'>
-            <img
-              className='limited-time-only-image'
-              style={{
-                width: '400px',
-                height: 'auto',
-                marginTop: 'auto',
-                marginBottom: '-55px',
-              }}
-              src='https://walterstaxstrategies.com/wp-content/uploads/2023/04/LTO.png'
-            />
-          </div>
-
+          <Forbes />
           <div className='roundtable-info'>
+            <div className='limited-time-only'>
+              <img
+                className='limited-time-only-image'
+                style={{
+                  width: '400px',
+                  height: 'auto',
+                  marginTop: '35px',
+                  border: 'none',
+                  marginBottom: '-55px',
+                }}
+                src='https://walterstaxstrategies.com/wp-content/uploads/2023/04/LTO.png'
+              />
+            </div>
+
             <h1 style={{ color: 'white' }}>
               The 2023 HNW Prospecting Masterclass
             </h1>
