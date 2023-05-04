@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import * as React from 'react';
-import Layout from './components/layout';
+import Layout from '@/components/layout';
 import Link from 'next/link';
 
 const faqs = [

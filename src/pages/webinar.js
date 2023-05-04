@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import Layout from './components/layout';
+import Layout from '@/components/layout';
 // import { Button } from "../components/ui.js"
 // import "./styles/summit-23.css"
 // import SEOHead from "../components/head"

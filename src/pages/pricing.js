@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
-import Layout from './components/layout';
-import Checkmark from './components/checkmark';
-import Button from './components/ui.css';
+import Layout from '@/components/layout';
+import Checkmark from '../components/checkmark';
 import Link from 'next/link';
 // import { useMediaQuery } from 'react-responsive';
 // import SEOHead from '../components/head';

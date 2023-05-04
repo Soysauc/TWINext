@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Layout from '../components/layout';
+import Layout from './layout';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
