@@ -3,12 +3,14 @@
   margin-bottom: 0px;
   font-size: 21px;
 }
+
 .burger {
   border-radius: 100%;
   border: 0.5px solid #072ac6;
   background-color: white;
   padding: 0;
 }
+
 .mobile-header {
   display: block;
 }
@@ -18,18 +20,20 @@
     display: none;
   }
 }
+
 .mobile-nav-overlay {
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: 1;
   background: #072ac6;
-  /* opacity: 0.8; */
 }
+
 .close-button:hover {
   cursor: pointer;
   opacity: 0.7;
 }
+
 .mobile__link:hover {
   opacity: 0.7;
   border-bottom: 1px solid white;
@@ -39,6 +43,7 @@
   opacity: 0.5;
   cursor: pointer;
 }
+
 .banner-link {
   color: white;
 }
@@ -50,6 +55,7 @@
 .banner h2 a:hover {
   color: #d0d7f5 !important;
 }
+
 .nav-links {
   text-decoration: none;
 }
@@ -75,13 +81,15 @@
 @media only screen and (max-width: 700px) {
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .desktop-header-nav-wrapper {
     display: none;
   }
+
   .cta-button {
     display: none;
   }
+
   header {
     height: 80px;
     background-color: #072ac6;

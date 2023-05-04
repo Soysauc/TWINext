@@ -46,88 +46,90 @@ function MobileHeader({ navItems, isOpen, onToggle, cta, className }) {
     onToggle(false);
   }
   return (
-    <div className={className}>
-      <header
-        style={{
-          position: 'relative',
-          zIndex: '9999',
-          background: 'white',
-          paddingTop: '15px',
-        }}
-      >
-        <nav
+    <div className='mobile-header'>
+      <div className={className}>
+        <header
           style={{
-            display: 'flex',
-            justifyContent: 'space-between',
+            position: 'relative',
+            zIndex: '9999',
+            background: 'white',
+            paddingTop: '15px',
           }}
         >
-          <NavLink to='/'>
-            <BrandLogo />
-          </NavLink>
-          <button className='burger' onClick={onToggle}>
-            {isOpen ? <XIcon onClick={handleClose} /> : <HamburgerIcon />}
-          </button>
-        </nav>
-        {isOpen && (
-          <div
+          <nav
             style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: 'blue',
-              color: 'white',
               display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
+              justifyContent: 'space-between',
             }}
           >
-            <button
-              style={{
-                background: 'blue',
-                border: 'none',
-                position: 'absolute',
-                top: 15,
-                right: 15,
-              }}
-              className='close-button'
-              onClick={handleClose}
-            >
-              <XIcon />
+            <NavLink to='/'>
+              <BrandLogo />
+            </NavLink>
+            <button className='burger' onClick={onToggle}>
+              {isOpen ? <XIcon onClick={handleClose} /> : <HamburgerIcon />}
             </button>
-            <FlexList>
-              {navItems.map((navItem) => (
-                <li
-                  key={navItem.id}
-                  style={{
-                    marginBottom: '20px',
-                    textDecoration: 'none',
-                    color: 'white',
-                  }}
-                >
-                  <NavLink to={navItem.href}>{navItem.text}</NavLink>
+          </nav>
+          {isOpen && (
+            <div
+              style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: 'blue',
+                color: 'white',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <button
+                style={{
+                  background: 'blue',
+                  border: 'none',
+                  position: 'absolute',
+                  top: 15,
+                  right: 15,
+                }}
+                className='close-button'
+                onClick={handleClose}
+              >
+                <XIcon />
+              </button>
+              <FlexList>
+                {navItems.map((navItem) => (
+                  <li
+                    key={navItem.id}
+                    style={{
+                      marginBottom: '20px',
+                      textDecoration: 'none',
+                      color: 'white',
+                    }}
+                  >
+                    <NavLink to={navItem.href}>{navItem.text}</NavLink>
+                  </li>
+                ))}
+                <li key={5}>
+                  <NavLink
+                    className={mobileNavLink}
+                    style={{
+                      fontWeight: '400',
+                      color: 'white',
+                      fontSize: '22px',
+                      textDecoration: 'none',
+                    }}
+                    to={`/contact-us`}
+                  >
+                    Contact Us
+                  </NavLink>
                 </li>
-              ))}
-              <li key={5}>
-                <NavLink
-                  className={mobileNavLink}
-                  style={{
-                    fontWeight: '400',
-                    color: 'white',
-                    fontSize: '22px',
-                    textDecoration: 'none',
-                  }}
-                  to={`/contact-us`}
-                >
-                  Contact Us
-                </NavLink>
-              </li>
-            </FlexList>
-          </div>
-        )}
-      </header>
+              </FlexList>
+            </div>
+          )}
+        </header>
+      </div>
     </div>
   );
 }
