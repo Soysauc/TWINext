@@ -42,6 +42,9 @@ function NavLink({ to, children, ...props }) {
 }
 
 function MobileHeader({ navItems, isOpen, onToggle, cta, className }) {
+  function handleClose() {
+    onToggle(false);
+  }
   return (
     <div className={className}>
       <header
@@ -62,7 +65,7 @@ function MobileHeader({ navItems, isOpen, onToggle, cta, className }) {
             <BrandLogo />
           </NavLink>
           <button className='burger' onClick={onToggle}>
-            {isOpen ? <XIcon /> : <HamburgerIcon />}
+            {isOpen ? <XIcon onClick={handleClose} /> : <HamburgerIcon />}
           </button>
         </nav>
         {isOpen && (
@@ -81,6 +84,19 @@ function MobileHeader({ navItems, isOpen, onToggle, cta, className }) {
               alignItems: 'center',
             }}
           >
+            <button
+              style={{
+                background: 'blue',
+                border: 'none',
+                position: 'absolute',
+                top: 15,
+                right: 15,
+              }}
+              className='close-button'
+              onClick={handleClose}
+            >
+              <XIcon />
+            </button>
             <FlexList>
               {navItems.map((navItem) => (
                 <li

@@ -137,6 +137,7 @@ const data = {
     {
       id: 5,
       navItemType: 'Dropdown',
+      href: '/education',
       text: 'Education',
       children: [
         {

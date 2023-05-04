@@ -5,7 +5,7 @@ const X = styled.svg`
   height: 50px;
 `;
 
-const XLine = styled.line`
+const XPath = styled.path`
   stroke: #fff; // set the stroke to white
   stroke-width: 2;
   color: #fff;
@@ -14,11 +14,11 @@ const XLine = styled.line`
 export const XIcon = (props) => {
   return (
     <X viewBox='0 0 50 50' {...props}>
-      <XLine x1='10' y1='10' x2='40' y2='40' />
-      <XLine x1='40' y1='10' x2='10' y2='40' />
+      <XPath d='M10 10 L40 40 M40 10 L10 40' />
     </X>
   );
 };
+
 const HamburgerWrapper = styled.div`
   width: 54px;
   height: 54px;
